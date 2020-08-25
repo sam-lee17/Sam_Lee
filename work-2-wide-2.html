@@ -13,7 +13,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Snow | Snow - Clean Portfolio HTML Template</title>
+        <title>Snow | Portfolio 2 Columns Wide 2</title>
         <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
         <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
         <meta name="author" content="nK">
@@ -98,10 +98,10 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class=" nk-drop-item">
+                            <li class="active nk-drop-item">
                                 <a href="work-2-style-1.html"> Work </a>
                                 <ul class="dropdown">
-                                    <li class=" nk-drop-item">
+                                    <li class="active nk-drop-item">
                                         <a href="work-2-style-1.html"> 2 Columns </a>
                                         <ul class="dropdown">
                                             <li>
@@ -122,7 +122,7 @@
                                             <li>
                                                 <a href="work-2-wide.html"> Wide 1 </a>
                                             </li>
-                                            <li>
+                                            <li class="active">
                                                 <a href="work-2-wide-2.html"> Wide 2 </a>
                                             </li>
                                         </ul>
@@ -322,130 +322,112 @@
         </nav>
         <!-- END: Navbar Mobile -->
         <div class="nk-main">
-            <!-- START: Snow -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2 text-center">
-                        <div class="nk-gap-6"></div>
-                        <div class="nk-gap-3"></div>
-                        <h2 class="display-4"><em>Snow</em> - Clean & Minimal Portfolio HTML Template</h2>
-                        <div class="nk-gap-6"></div>
-                        <div class="nk-gap-2 mnt-7"></div>
-                    </div>
+            <div class="container-fluid">
+                <!-- START: Filter -->
+                <div class="nk-pagination nk-pagination-nobg nk-pagination-center">
+                    <a href="#nk-toggle-filter"><span class="nk-icon-squares"></span></a>
                 </div>
-            </div>
-            <!-- END: Snow -->
-            <!-- START: Available Home Pages -->
-            <div class="bg-white">
-                <div class="nk-gap-5"></div>
-                <h2 class="text-center">Available Home Pages</h2>
-                <div class="nk-gap-3"></div>
-                <div class="container">
-                    <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols nk-isotope-gap">
-                        <div class="nk-isotope-item">
-                            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
-                                <a href="home-1.html" class="nk-portfolio-item-link"></a>
-                                <img class="nk-portfolio-item-image" src="assets/images/promo-home-1.jpg" alt="Home Default">
-                                <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                    <div>
-                                        <h2 class="portfolio-item-title h3">Home Default</h2>
-                                    </div>
+                <ul class="nk-isotope-filter">
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter="Branding">Branding</li>
+                    <li data-filter="Print">Print</li>
+                    <li data-filter="Photography">Photography</li>
+                    <li data-filter="Design">Design</li>
+                    <li data-filter="Mockup">Mockup</li>
+                </ul>
+                <!-- END: Filter -->
+                <div class="nk-portfolio-list nk-isotope nk-isotope-2-cols">
+                    <div class="nk-isotope-item" data-filter="Mockup">
+                        <div class="nk-portfolio-item nk-portfolio-item-info-style-3 nk-portfolio-item-sm">
+                            <a href="work-single-1.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image">
+                                <div style="background-image: url('assets/images/portfolio-1-sm.jpg')"></div>
+                            </div>
+                            <div class="nk-portfolio-item-info">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Bag Mockup</h2>
+                                    <div class="portfolio-item-category">Mockup</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="nk-isotope-item">
-                            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
-                                <a href="home-2.html" class="nk-portfolio-item-link"></a>
-                                <img class="nk-portfolio-item-image" src="assets/images/promo-home-2.jpg" alt="Minimal Portfolio">
-                                <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                    <div>
-                                        <h2 class="portfolio-item-title h3">Minimal Portfolio</h2>
-                                    </div>
+                    </div>
+                    <div class="nk-isotope-item" data-filter="Branding">
+                        <div class="nk-portfolio-item nk-portfolio-item-info-style-3 nk-portfolio-item-lg">
+                            <a href="work-single-2.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image">
+                                <div style="background-image: url('assets/images/portfolio-2-sm.jpg')"></div>
+                            </div>
+                            <div class="nk-portfolio-item-info">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Business Card</h2>
+                                    <div class="portfolio-item-category">Branding</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="nk-isotope-item">
-                            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
-                                <a href="home-3.html" class="nk-portfolio-item-link"></a>
-                                <img class="nk-portfolio-item-image" src="assets/images/promo-home-3.jpg" alt="Slider Home">
-                                <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                    <div>
-                                        <h2 class="portfolio-item-title h3">Slider Home</h2>
-                                    </div>
+                    </div>
+                    <div class="nk-isotope-item" data-filter="Branding">
+                        <div class="nk-portfolio-item nk-portfolio-item-info-style-3 nk-portfolio-item-lg">
+                            <a href="work-single-5.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image">
+                                <div style="background-image: url('assets/images/portfolio-5-sm.jpg')"></div>
+                            </div>
+                            <div class="nk-portfolio-item-info">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Minimal Bag</h2>
+                                    <div class="portfolio-item-category">Branding</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="nk-isotope-item">
-                            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
-                                <a href="home-4.html" class="nk-portfolio-item-link"></a>
-                                <img class="nk-portfolio-item-image" src="assets/images/promo-home-4.jpg" alt="Video Home">
-                                <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                    <div>
-                                        <h2 class="portfolio-item-title h3">Video Home</h2>
-                                    </div>
+                    </div>
+                    <div class="nk-isotope-item" data-filter="Print">
+                        <div class="nk-portfolio-item nk-portfolio-item-info-style-3 nk-portfolio-item-sm">
+                            <a href="work-single-4.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image">
+                                <div style="background-image: url('assets/images/portfolio-4-sm.jpg')"></div>
+                            </div>
+                            <div class="nk-portfolio-item-info">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Modern T-Shirt</h2>
+                                    <div class="portfolio-item-category">Print</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="nk-isotope-item">
-                            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
-                                <a href="home-5.html" class="nk-portfolio-item-link"></a>
-                                <img class="nk-portfolio-item-image" src="assets/images/promo-home-5.jpg" alt="Freelancer Portfolio">
-                                <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                    <div>
-                                        <h2 class="portfolio-item-title h3">Freelancer Portfolio</h2>
-                                    </div>
+                    </div>
+                    <div class="nk-isotope-item" data-filter="Mockup">
+                        <div class="nk-portfolio-item nk-portfolio-item-info-style-3 nk-portfolio-item-sm">
+                            <a href="work-single-3.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image">
+                                <div style="background-image: url('assets/images/portfolio-7-sm.jpg')"></div>
+                            </div>
+                            <div class="nk-portfolio-item-info">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Vinyl Record</h2>
+                                    <div class="portfolio-item-category">Mockup</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="nk-isotope-item">
-                            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
-                                <a href="home-6.html" class="nk-portfolio-item-link"></a>
-                                <img class="nk-portfolio-item-image" src="assets/images/promo-home-6.jpg" alt="Minimal Agency">
-                                <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                    <div>
-                                        <h2 class="portfolio-item-title h3">Minimal Agency</h2>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="nk-isotope-item" data-filter="Design">
+                        <div class="nk-portfolio-item nk-portfolio-item-info-style-3 nk-portfolio-item-sm">
+                            <a href="work-single-3.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image">
+                                <div style="background-image: url('assets/images/portfolio-9-sm.jpg')"></div>
                             </div>
-                        </div>
-                        <div class="nk-isotope-item">
-                            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
-                                <a href="home-7.html" class="nk-portfolio-item-link"></a>
-                                <img class="nk-portfolio-item-image" src="assets/images/promo-home-7.jpg" alt="One Page Agency">
-                                <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                    <div>
-                                        <h2 class="portfolio-item-title h3">One Page Agency</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nk-isotope-item">
-                            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
-                                <a href="home-8.html" class="nk-portfolio-item-link"></a>
-                                <img class="nk-portfolio-item-image" src="assets/images/promo-home-8.jpg" alt="Digital Agency">
-                                <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                    <div>
-                                        <h2 class="portfolio-item-title h3">Digital Agency</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nk-isotope-item">
-                            <div class="nk-portfolio-item nk-portfolio-item-info-style-1">
-                                <a href="home-9.html" class="nk-portfolio-item-link"></a>
-                                <img class="nk-portfolio-item-image" src="assets/images/promo-home-9.jpg" alt="Fullscreen Slider">
-                                <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                    <div>
-                                        <h2 class="portfolio-item-title h3">Fullscreen Slider</h2>
-                                    </div>
+                            <div class="nk-portfolio-item-info">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Clean &amp; Groovy</h2>
+                                    <div class="portfolio-item-category">Design</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="nk-gap-5"></div>
             </div>
-            <!-- END: Available Home Pages -->
+            <!-- START: Pagination -->
+            <div class="nk-pagination nk-pagination-center">
+                <a href="#">Load More Works</a>
+            </div>
+            <!-- END: Pagination -->
             <!--
     START: Footer
 
