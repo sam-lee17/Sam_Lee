@@ -13,7 +13,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Snow | Minimal Portfolio</title>
+        <title>Snow | Blog Masonry 2 Columns</title>
         <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
         <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
         <meta name="author" content="nK">
@@ -59,7 +59,7 @@
             .nk-navbar-transparent-always
             .nk-navbar-white-text-on-top
     -->
-            <nav class="nk-navbar nk-navbar-top">
+             <nav class="nk-navbar nk-navbar-top">
                 <div class="container">
                     <div class="nk-nav-table">
                         <a href="index.html" class="nk-nav-logo">
@@ -185,196 +185,180 @@
         </nav>
         <!-- END: Navbar Mobile -->
         <div class="nk-main">
-            <!-- START: Digital. Modern. Creative -->
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="nk-gap-4 mb-4"></div>
-                        <h2 class="display-4">Think. Design. Develop.</h2>
-                        <div class="nk-gap mnt-5"></div>
-                        <p>We are a new design studio based in USA. We have over 10 years of combined experience, and know a thing or two about designing websites and mobile apps. Clever use of technology and lean processes enable us to work faster and smarter.</p>
-                        <div class="nk-gap-4 mnt-10"></div>
-                    </div>
+                <!-- START: Filter -->
+                <div class="nk-pagination nk-pagination-nobg nk-pagination-center">
+                    <a href="#nk-toggle-filter"><span class="nk-icon-squares"></span></a>
                 </div>
-            </div>
-            <!-- END: Digital. Modern. Creative -->
-            <!-- START: Portfolio -->
-            <div class="container-fluid">
-                <div class="nk-portfolio-list nk-isotope nk-isotope-4-cols">
-                    <div class="nk-isotope-item" data-filter="Mockup">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-1.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-1-sm.jpg');"></div>
+                <ul class="nk-isotope-filter">
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter="Nature">Nature</li>
+                    <li data-filter="Cities">Cities</li>
+                    <li data-filter="Branding">Branding</li>
+                    <li data-filter="Design">Design</li>
+                </ul>
+                <!-- END: Filter -->
+                <!-- START: Posts List -->
+                <div class="nk-blog-isotope nk-isotope nk-isotope-gap nk-isotope-2-cols">
+                    <!-- START: Post -->
+                    <div class="nk-isotope-item" data-filter="Nature">
+                        <div class="nk-blog-post">
+                            <div class="nk-post-thumb">
+                                <a href="blog-single.html">
+                                    <img src="assets/images/post-1-mid.jpg" alt="" class="nk-img-stretch">
+                                </a>
+                                <div class="nk-post-category"><a href="#">Nature</a></div>
                             </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">Bag Mockup</h2>
-                                    <div class="portfolio-item-category">Mockup</div>
-                                </div>
+                            <h2 class="nk-post-title h4"><a href="blog-single.html">Something I need to tell you</a></h2>
+                            <div class="nk-post-date"> September 18, 2018 </div>
+                            <div class="nk-post-text">
+                                <p>That female isn't midst divide kind upon seas lights greater green creature lights brought.</p>
                             </div>
                         </div>
                     </div>
+                    <!-- END: Post -->
+                    <!-- START: Post -->
+                    <div class="nk-isotope-item" data-filter="Cities">
+                        <div class="nk-blog-post">
+                            <div class="nk-post-thumb">
+                                <a href="blog-single.html">
+                                    <img src="assets/images/post-2-mid.jpg" alt="" class="nk-img-stretch">
+                                </a>
+                                <div class="nk-post-category"><a href="#">Cities</a></div>
+                            </div>
+                            <h2 class="nk-post-title h4"><a href="blog-single.html">Here&#39;s a Simple Trick</a></h2>
+                            <div class="nk-post-date"> September 5, 2018 </div>
+                            <div class="nk-post-text">
+                                <p>The spirit over midst fruit forth fish under beginning to multiply thing female green land.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Post -->
+                    <!-- START: Post -->
+                    <div class="nk-isotope-item" data-filter="Nature">
+                        <div class="nk-blog-post">
+                            <div class="nk-post-thumb">
+                                <a href="blog-single.html">
+                                    <img src="assets/images/post-3-mid.jpg" alt="" class="nk-img-stretch">
+                                </a>
+                                <div class="nk-post-category"><a href="#">Nature</a></div>
+                            </div>
+                            <h2 class="nk-post-title h4"><a href="blog-single.html">The History of Nature</a></h2>
+                            <div class="nk-post-date"> August 27, 2018 </div>
+                            <div class="nk-post-text">
+                                <p>Third is fly. From one under in itself two waters, all own. Said male shall greater own grass.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Post -->
+                    <!-- START: Post -->
                     <div class="nk-isotope-item" data-filter="Branding">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-2.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-2-sm.jpg');"></div>
+                        <div class="nk-blog-post">
+                            <div class="nk-post-thumb">
+                                <a href="blog-single.html">
+                                    <img src="assets/images/post-4-mid.jpg" alt="" class="nk-img-stretch">
+                                </a>
+                                <div class="nk-post-category"><a href="#">Branding</a></div>
                             </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">Business Card</h2>
-                                    <div class="portfolio-item-category">Branding</div>
-                                </div>
+                            <h2 class="nk-post-title h4"><a href="blog-single.html">Are you doing the Right Way?</a></h2>
+                            <div class="nk-post-date"> August 14, 2018 </div>
+                            <div class="nk-post-text">
+                                <p>Which all, morning isn't. Female and own living dry, and morning lesser first he stars under years thing.</p>
                             </div>
                         </div>
                     </div>
+                    <!-- END: Post -->
+                    <!-- START: Post -->
                     <div class="nk-isotope-item" data-filter="Design">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-3.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-3-sm.jpg');"></div>
+                        <div class="nk-blog-post">
+                            <div class="nk-post-thumb">
+                                <a href="blog-single.html">
+                                    <img src="assets/images/post-5-mid.jpg" alt="" class="nk-img-stretch">
+                                </a>
+                                <div class="nk-post-category"><a href="#">Design</a></div>
                             </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">Minimal Mobile App</h2>
-                                    <div class="portfolio-item-category">Design</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nk-isotope-item" data-filter="Print">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-4.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-4-sm.jpg');"></div>
-                            </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">Modern T-Shirt</h2>
-                                    <div class="portfolio-item-category">Print</div>
-                                </div>
+                            <h2 class="nk-post-title h4"><a href="blog-single.html">Ten things about Photography</a></h2>
+                            <div class="nk-post-date"> August 14, 2018 </div>
+                            <div class="nk-post-text">
+                                <p>Be forth, god for rule face abundantly all our two winged made. Is whose morning female.</p>
                             </div>
                         </div>
                     </div>
+                    <!-- END: Post -->
+                    <!-- START: Post -->
+                    <div class="nk-isotope-item" data-filter="Design">
+                        <div class="nk-blog-post">
+                            <div class="nk-post-thumb">
+                                <a href="blog-single.html">
+                                    <img src="assets/images/post-6-mid.jpg" alt="" class="nk-img-stretch">
+                                </a>
+                                <div class="nk-post-category"><a href="#">Design</a></div>
+                            </div>
+                            <h2 class="nk-post-title h4"><a href="blog-single.html">Why you should Always First</a></h2>
+                            <div class="nk-post-date"> August 14, 2018 </div>
+                            <div class="nk-post-text">
+                                <p>Lights give have herb. First. Seed lesser his a fruit. Stars good divide fish appear don't, third deep.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Post -->
+                    <!-- START: Post -->
+                    <div class="nk-isotope-item" data-filter="Cities">
+                        <div class="nk-blog-post">
+                            <div class="nk-post-thumb">
+                                <a href="blog-single.html">
+                                    <img src="assets/images/post-9-mid.jpg" alt="" class="nk-img-stretch">
+                                </a>
+                                <div class="nk-post-category"><a href="#">Cities</a></div>
+                            </div>
+                            <h2 class="nk-post-title h4"><a href="blog-single.html">My Favorite Place on earth is...</a></h2>
+                            <div class="nk-post-date"> June 21, 2018 </div>
+                            <div class="nk-post-text">
+                                <p>There hath can't rule open fruitful every, our under gathering replenish and. Unto it fill him.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Post -->
+                    <!-- START: Post -->
+                    <div class="nk-isotope-item" data-filter="Nature">
+                        <div class="nk-blog-post">
+                            <div class="nk-post-thumb">
+                                <a href="blog-single.html">
+                                    <img src="assets/images/post-7-mid.jpg" alt="" class="nk-img-stretch">
+                                </a>
+                                <div class="nk-post-category"><a href="#">Nature</a></div>
+                            </div>
+                            <h2 class="nk-post-title h4"><a href="blog-single.html">Five things about Nature</a></h2>
+                            <div class="nk-post-date"> Jule 3, 2018 </div>
+                            <div class="nk-post-text">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Post -->
+                    <!-- START: Post -->
                     <div class="nk-isotope-item" data-filter="Branding">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-5.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-5-sm.jpg');"></div>
+                        <div class="nk-blog-post">
+                            <div class="nk-post-thumb">
+                                <a href="blog-single.html">
+                                    <img src="assets/images/post-8-mid.jpg" alt="" class="nk-img-stretch">
+                                </a>
+                                <div class="nk-post-category"><a href="#">Branding</a></div>
                             </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">Minimal Bag</h2>
-                                    <div class="portfolio-item-category">Branding</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nk-isotope-item" data-filter="Photography">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-1.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-6-sm.jpg');"></div>
-                            </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">Heja Stockholm</h2>
-                                    <div class="portfolio-item-category">Photography</div>
-                                </div>
+                            <h2 class="nk-post-title h4"><a href="blog-single.html">The History of Branding</a></h2>
+                            <div class="nk-post-date"> June 26, 2018 </div>
+                            <div class="nk-post-text">
+                                <p>Life and. Be light, him second signs his midst place you're open also fish grass yielding, very their it so.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="nk-isotope-item" data-filter="Mockup">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-3.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-7-sm.jpg');"></div>
-                            </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">Vinyl Record</h2>
-                                    <div class="portfolio-item-category">Mockup</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nk-isotope-item" data-filter="Print">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-3.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-8-sm.jpg');"></div>
-                            </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">White T-Shirt</h2>
-                                    <div class="portfolio-item-category">Print</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nk-isotope-item" data-filter="Design">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-3.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-9-sm.jpg');"></div>
-                            </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">Clean &amp; Groovy</h2>
-                                    <div class="portfolio-item-category">Design</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nk-isotope-item" data-filter="Design">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-3.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-10-sm.jpg');"></div>
-                            </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">Red Wine Bottle</h2>
-                                    <div class="portfolio-item-category">Design</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nk-isotope-item" data-filter="Design">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-3.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-11-sm.jpg');"></div>
-                            </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">Clean Website</h2>
-                                    <div class="portfolio-item-category">Design</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nk-isotope-item" data-filter="Photography">
-                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
-                            <a href="work-single-3.html" class="nk-portfolio-item-link"></a>
-                            <div class="nk-portfolio-item-image">
-                                <div style="background-image: url('assets/images/portfolio-12-sm.jpg');"></div>
-                            </div>
-                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-center">
-                                <div>
-                                    <h2 class="portfolio-item-title h3">Paper Bag</h2>
-                                    <div class="portfolio-item-category">Photography</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- END: Post -->
                 </div>
+                <!-- END: Posts List -->
+                <div class="nk-gap-4"></div>
             </div>
-            <!-- END: Portfolio -->
             <!-- START: Pagination -->
             <div class="nk-pagination nk-pagination-center">
-                <a href="#">Load More Works</a>
+                <a href="#">Load More Posts</a>
             </div>
             <!-- END: Pagination -->
             <!--
