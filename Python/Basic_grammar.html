@@ -13,7 +13,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Snow | Work 3</title>
+        <title>Python | Basic of Grammar of Python</title>
         <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
         <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
         <meta name="author" content="nK">
@@ -41,6 +41,19 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-light.min.css" integrity="sha512-11xYl5MU0/AMaYnuBOXDDQdZnl5WGtLVidxqa0XUAXYf6cGnJShNpgtbmB/0MW6ypeev+9Bwj7I/J8wexX8ePw==" crossorigin="anonymous" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" integrity="sha512-jufbyMC+y5pH6dbL/adxAoUWkeGLwx6meC+9yoqY9CFLd4zpC9s5hU9c+stY2uHoYy2lIUih+HbYJIqTZxhCQQ==" crossorigin="anonymous"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <style> 
+        p{margin-bottom: 0.5rem}
+        pre{
+            padding:0px;
+            background-color:white;
+        }
+        </style>
     </head>
     <!--
     Additional Classes:
@@ -59,7 +72,7 @@
             .nk-navbar-transparent-always
             .nk-navbar-white-text-on-top
     -->
-             <nav class="nk-navbar nk-navbar-top">
+            <nav class="nk-navbar nk-navbar-top">
                 <div class="container">
                     <div class="nk-nav-table">
                         <a href="index.html" class="nk-nav-logo">
@@ -185,77 +198,111 @@
         </nav>
         <!-- END: Navbar Mobile -->
         <div class="nk-main">
-            <div class="nk-portfolio-single-header">
-                <div>
-                    <div class="container">
-                        <div class="row vertical-gap d-md-flex">
-                            <div class="col-md-6">
-                                <h1 class="nk-portfolio-title display-4">  </h1>
-                                <div class="lead">
-                                    <center>
-                                        <strong><em> Airplane Pose</em></strong></div>
-                                    </center>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="../assets/images/Airplane Pose_2.jpg" alt="" class="nk-img-fit">
-                            </div>
+            <!-- START: Header Title -->
+            <!--
+    Additional Classes:
+        .nk-header-title-sm
+        .nk-header-title-md
+        .nk-header-title-lg
+        .nk-header-title-xl
+        .nk-header-title-full
+        .nk-header-title-parallax
+        .nk-header-title-parallax-opacity
+-->
+            <div class="nk-header-title nk-header-title-lg nk-header-title-parallax nk-header-title-parallax-opacity">
+                <div class="bg-image">
+                    <div style="background-image: url('../assets/images/post-6.jpg');"></div>
+                </div>
+                <div class="nk-header-table">
+                    <div class="nk-header-table-cell">
+                        <div class="container">
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- END: Header Title -->
             <div class="container">
-                <div class="nk-portfolio-single">
-                    <div class="nk-gap-4 mb-14"></div>
-                    <div class="row vertical-gap">
-                        <div class="col-lg-8">
-                            <div class="nk-portfolio-info">
-                                <div class="row vertical-gap">
-                                    <div class="col-md-6">
-                                        <div class="nk-portfolio-text">
-                                            <p class="nk-portfolio-details"><strong> Partner 1 (Bottom)</strong><br> 1. Lie down on your back.
-                                            <br> 2. Put your feet on Partner 2's hipbone and lift him/her up into the air, striagthening both legs.
-                                            <br> 3. Hold your Partner 2's hands and straigthen both arms.
-                                            <br> 4. Make sure your legs are perpendicular to the ground.
-                                        </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="nk-portfolio-text">
-                                            <p class="nk-portfolio-details"><strong>Partner 2 (Top)</strong>
-                                            <br> 1. When Partner 1 lifts you up into the air, kick off the ground for an additional momentum at the same time.
-                                            <br> 2. Hold Partner 1's hands and straigthen both arms.
-                                            <br> 3. Try to stretch your entire body like a flat surface.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="nk-gap-4"></div>
+                        <!-- START: Post -->
+                        <div class="nk-blog-post nk-blog-post-single">
+                            <h1 class="display-4">Basic Grammar of Python</h1>
+                            <div class="nk-post-meta">
+                                <div class="nk-post-date">September 10, 2020</div>
+                                <div class="nk-post-category"><a href="#">Python</a></div>
                             </div>
+                            <!-- START: Post Text -->
+                            <div class="nk-post-text">
+                                <p><span style="color: #000000;">One of the most common programming languages is Python.</span></p>
+                                <p><span style="color: #000000;">While C language was created from the perspective of a computer, Python was created from the perspective of the user (people).</span></p>
+                                <p><span style="color: #000000;">It operates similarly as a human being, how one thinks and formulates, which means it is a great language for a novice in computer languages.</span></p>
+                                <hr data-ke-style="style1" data-ke-type="horizontalRule" />
+                                <p><span style="color: #0593d3;"><b>1. Data Type</b></span></p>
+                                <p><span style="color: #000000;">There are 7 major variable types in python: numbers, string, list, tuple, bool, dictionary, set.</span></p>
+                                <p><span style="color: #000000;">It is a way to communicate with the computer (language).</span></p>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #0593d3;"><b>2. Print function</b></span></p>
+                                <p><span style="color: #000000;">The print ( ) (print function) prints the message inside the parentheses. The message could be in any type of variable.</span></p>
+                                <p><span style="color: #409d00;">ex)</span></p>
+                                <pre id="code_1597392893118" class="python" data-ke-type="codeblock" data-ke-language="python"><code>print (1)</code></pre>
+                                <p><span style="color: #000000;">This prints out 1.</span></p>
+                                <pre id="code_1597393014562" class="python" data-ke-type="codeblock" data-ke-language="python"><code>print("Hello.", "Nice to meet you.")<br>Hello. Nice to meet you.</code></pre>
+                                <p><span style="color: #000000;">To print out more than one message, you can use a comma to separate them.</span></p>
+                                <pre id="code_1597393248103" class="python" data-ke-type="codeblock" data-ke-language="python"><code>print(111, "Python", 123, sep = !!) <br>111!!Python!!123</code></pre>
+                                <p><span style="color: #000000;">Using 'sep' specifies how you want to separate the messages.</span></p>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #0593d3;"><b>3. Substitution</b></span></p>
+                                <p><span style="color: #000000;">You are asking the computer to remember a certain variable as a text.</span></p>
+                                <p><span style="color: #000000;">You put the text on the left of '=' and the variable on the right of '='.</span></p>
+                                <pre id="code_1597392583611" class="python" data-ke-type="codeblock" data-ke-language="python"><code>a = 1</code></pre>
+                                <p><span style="color: #000000;">Here, you substituted 'a' for number 1. From now on the computer considers 'a' as number 1.</span></p>
+                                <p><span style="color: #000000;">If you ask the computer to print out 'a' using print function, it will give you number 1 instead of 'a'.</span></p>
+                                <p><span style="color: #409d00;">ex)</span></p>
+                                <pre id="code_1597393586146" class="python" data-ke-type="codeblock" data-ke-language="python"><code>a = 1 <br>b = 2<br>c = 3<br>print(a + b + c)<br><br>6</code></pre>
+                                <p><span style="color: #000000;">Conditions of substitution</span></p>
+                                <p><span style="color: #000000;">=&gt; Capital and lower case letters have to be differentiated. ('A' does not equal 'a')&nbsp;</span></p>
+                                <p><span style="color: #000000;">=&gt; A number for substitution can be used ONLY with a text. ()</span></p>
+                                <p><span style="color: #000000;">=&gt; Special characters cannot be used except for underbar ('_') because they all have their functions.&nbsp; &nbsp;ex) %, ^, &amp;, *...</span></p>
+                                <p><span style="color: #000000;">=&gt; Reserved words cannot be used.&nbsp; ex) True, False, or...&nbsp; &nbsp; &nbsp;More about reserved words</span></p>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #000000;">How to delete a substitution</span></p>
+                                <p><span style="color: #000000;">=&gt; Use 'del'</span></p>
+                                <pre id="code_1597394513662" class="python" data-ke-type="codeblock" data-ke-language="python"><code>del a</code></pre>
+                                <p><span style="color: #000000;">=&gt; The computer automatically deletes it when you turn off python.</span></p>
+                                <p>&nbsp;</p>
+                                <p><b><span style="color: #0593d3;">4. Annotation (#)</span></b></p>
+                                <p><span style="color: #000000;">The computer ignores the codes with an annotation in front and skips them without performing.</span></p>
+                                <p><span style="color: #000000;">You use it when you want to write down the description of the code or to keep the code you need for the future.</span><span style="color: #000000;"></span></p>
+                                <p>&nbsp;</p>
+                            </div>
+                            <!-- END: Post Text -->
+                            <!-- START: Post Share -->
+                            <div class="nk-post-share">
+                                <strong>Share:</strong>
+                                <a href="#" title="Share page on Facebook" data-share="facebook">Facebook</a>, <a href="#" title="Share page on Twitter" data-share="twitter">Twitter</a>, <a href="#" title="Share page on Pinterest" data-share="pinterest">Pinterest</a>
+                                <!--
+                        <a href="#" title="Share page on Google Plus" data-share="google-plus">Google Plus</a>,
+                        <a href="#" title="Share page on LinkedIn" data-share="linkedin">LinkedIn</a>,
+                        <a href="#" title="Share page on Vkontakte" data-share="vk">Vkontakte</a>
+                        -->
+                            </div>
+                            <!-- END: Post Share -->
                         </div>
-                        <div class="col-lg-4">
-                            <table class="nk-portfolio-details">
-                                <tr>
-                                    <td><strong>Date:</strong></td>
-                                    <td>08.07.2020</td>
-                                </tr>
-                                        <!--
-                            <a href="#" title="Share page on Google Plus" data-share="google-plus">Google Plus</a>,
-                            <a href="#" title="Share page on LinkedIn" data-share="linkedin">LinkedIn</a>,
-                            <a href="#" title="Share page on Vkontakte" data-share="vk">Vkontakte</a>
-                            -->
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                        <!-- END: Post -->
+                        <div class="nk-gap-3"></div>
                     </div>
-                    <div class="nk-gap-4 mt-14"></div>
                 </div>
             </div>
+            <!-- START: Comments -->
+
+            <!-- END: Reply -->
             <!-- START: Pagination -->
             <div class="nk-pagination nk-pagination-center">
                 <div class="container">
-                    <a class="nk-pagination-prev" href="work-single-2.html"><span class="pe-7s-angle-left"></span> Previous Work</a>
-                    <a class="nk-pagination-center" href="work-3-style-1.html"><span class="nk-icon-squares"></span></a>
-                    <a class="nk-pagination-next" href="work-single-4.html">Next Work <span class="pe-7s-angle-right"></span> </a>
+                    <a class="nk-pagination-prev" href="#"><span class="pe-7s-angle-left"></span> Previous Post</a>
+                    <a class="nk-pagination-center" href="blog-masonry-2.html"><span class="nk-icon-squares"></span></a>
+                    <a class="nk-pagination-next" href="#">Next Post <span class="pe-7s-angle-right"></span> </a>
                 </div>
             </div>
             <!-- END: Pagination -->
@@ -265,7 +312,7 @@
     Additional Classes:
         .nk-footer-transparent
 -->
-            <footer class="nk-footer">
+           <footer class="nk-footer">
                 <div class="nk-footer-cont">
                     <div class="container text-center">
                         <div class="nk-footer-text">
