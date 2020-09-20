@@ -13,7 +13,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SL | Python</title>
+        <title>Python | Input / Print Function</title>
         <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
         <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
         <meta name="author" content="nK">
@@ -41,6 +41,19 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-light.min.css" integrity="sha512-11xYl5MU0/AMaYnuBOXDDQdZnl5WGtLVidxqa0XUAXYf6cGnJShNpgtbmB/0MW6ypeev+9Bwj7I/J8wexX8ePw==" crossorigin="anonymous" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" integrity="sha512-jufbyMC+y5pH6dbL/adxAoUWkeGLwx6meC+9yoqY9CFLd4zpC9s5hU9c+stY2uHoYy2lIUih+HbYJIqTZxhCQQ==" crossorigin="anonymous"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <style> 
+        p{margin-bottom: 0.5rem}
+        pre{
+            padding:0px;
+            background-color:white;
+        }
+        </style>
     </head>
     <!--
     Additional Classes:
@@ -59,7 +72,7 @@
             .nk-navbar-transparent-always
             .nk-navbar-white-text-on-top
     -->
-             <nav class="nk-navbar nk-navbar-top">
+            <nav class="nk-navbar nk-navbar-top">
                 <div class="container">
                     <div class="nk-nav-table">
                         <a href="index.html" class="nk-nav-logo">
@@ -139,7 +152,7 @@
 -->
         <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
             <div class="nk-navbar-bg">
-                <div class="bg-image" style="background-image: url('assets/images/bg-menu.jpg')"></div>
+                <div class="bg-image" style="background-image: url('../assets/images/bg-menu.jpg')"></div>
             </div>
             <div class="nk-nav-table">
                 <div class="nk-nav-row">
@@ -185,180 +198,96 @@
         </nav>
         <!-- END: Navbar Mobile -->
         <div class="nk-main">
+            <!-- START: Header Title -->
+            <!--
+    Additional Classes:
+        .nk-header-title-sm
+        .nk-header-title-md
+        .nk-header-title-lg
+        .nk-header-title-xl
+        .nk-header-title-full
+        .nk-header-title-parallax
+        .nk-header-title-parallax-opacity
+-->
+            <div class="nk-header-title nk-header-title-lg nk-header-title-parallax nk-header-title-parallax-opacity">
+                <div class="bg-image">
+                    <div style="background-image: url('../assets/images/post-6.jpg');"></div>
+                </div>
+                <div class="nk-header-table">
+                    <div class="nk-header-table-cell">
+                        <div class="container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Header Title -->
             <div class="container">
-                <!-- START: Filter -->
-                <div class="nk-pagination nk-pagination-nobg nk-pagination-center">
-                    <a href="#nk-toggle-filter"><span class="nk-icon-squares"></span></a>
-                </div>
-                <ul class="nk-isotope-filter">
-                    <li class="active" data-filter="*">All</li>
-                    <li data-filter="Nature">Nature</li>
-                    <li data-filter="Cities">Cities</li>
-                    <li data-filter="Branding">Branding</li>
-                    <li data-filter="Design">Design</li>
-                </ul>
-                <!-- END: Filter -->
-                <!-- START: Posts List -->
-                <div class="nk-blog-isotope nk-isotope nk-isotope-gap nk-isotope-2-cols">
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Nature">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-1-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="nk-gap-4"></div>
+                        <!-- START: Post -->
+                        <div class="nk-blog-post nk-blog-post-single">
+                            <h1 class="display-4">Input / Print Function</h1>
+                            <div class="nk-post-meta">
+                                <div class="nk-post-date">September 13, 2020</div>
                                 <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Python Basic Grammar</a></h2>
-                            <div class="nk-post-date"> September 10, 2020 </div>
+                            <!-- START: Post Text -->
                             <div class="nk-post-text">
-                                <p>Data Type, Print function, Substitution, Annotation.</p>
+                                <p><span style="color: #0593d3;"><b>Input function</b></span></p>
+                                <p><span style="color: #000000;">The input function allows the user to type in a new value every time one runs the code.</span></p>
+                                <p><span style="color: #000000;">To use this function, you need a variable.</span></p>
+                                <pre id="code_1597504893255" class="python" data-ke-type="codeblock" data-ke-language="python"><code>x = input()</code></pre>
+                                <p>You can write the description inside the parentheses using quotation marks (" ").</p>
+                                <pre id="code_1597504893255" class="python" data-ke-type="codeblock" data-ke-language="python"><code>x = input("Please enter a number")<br>Please enter a number</code></pre>
+                                <p><span style="color: #000000;">Something that you should keep in mind is that the value of the input is always in string type.</span></p>
+                                <p><span style="color: #000000;">So if you want to change the entered value to a number, you can use an int( ) function.</span></p>
+                                <pre id="code_1597504893255" class="python" data-ke-type="codeblock" data-ke-language="python"><code>x = input(20)<br>x = int(x)</code></pre>
+                                <p><span style="color: #000000;">The '20' is a string type at first but it changes to a number type by using int( ).</span></p>
+                                <p><span style="color: #000000;">To verify that it is a number, or to check its variable type, you use the type( ) function.</span></p>
+                                <pre id="code_1597504893255" class="python" data-ke-type="codeblock" data-ke-language="python"><code>x = int(input())<br>print(type(x))<br><br>20<br>class 'int'</code></pre>
+                                <p>The output indicates that '20' has been converted to a number.</p>
+                                <hr data-ke-style="style5" data-ke-type="horizontalRule" />
+                                <p><span style="color: #0593d3;"><b>Example Questions</b></span></p>
+                                <p><span style="color: #000000;"><span style="color: #409d00;">Q1.</span> At a cafe you own, espresso and americano cost $2.5, and latte costs $3. If you have sold 10 cups of espresso, 5 cups of americano, and 15 cups of latte, how much did you earn today? (Keep on mind that the number of cups sold varies every day)</span></p>
+                                <p><span style="color: #409d00;">A1. </span></p>
+                                <p><span style="color: #000000;">Let's define the number of espressos sold as x, the number of americanos sold as y, and the number of lattes sold as z.</span></p>
+                                <p><span style="color: #000000;">Since the number of cups sold varies every day, use the input function to we could enter a new value every time when calculating the earnings. Here, we need to be aware that the value is always in string type; we want the value to be in a number type. This can be done using the int function.</span></p>
+                                <pre id="code_1597646131072" class="python" data-ke-type="codeblock" data-ke-language="python"><code>x = int(input())<br>y = int(input())<br>z = int(input())</code></pre>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #000000;">To calculate the total gain, we need to multiply the number of cups sold by the cost of a cup for all three drinks and add the three results.</span></p>
+                                <pre id="code_1597646380372" class="python" data-ke-type="codeblock" data-ke-language="python"><code>espresso = x * 2.5<br>americano = y * 2.5<br>latte = z * 3<br>print("Today's total earning is: $", espresso + americano + latte)</code></pre>
+                                <pre id="code_1597504893255" class="python" data-ke-type="codeblock" data-ke-language="python"><code>x = int(input())<br>y = int(input())<br>z = int(input())<br>espresso = x * 2.5<br>americano = y * 2.5<br>latte = z * 3<br>print("Today's total earning is: $", espresso + americano + latte)<br><br>10<br>5<br>15<br>Today's toatl earning is: $ 82.5</code></pre>
+                                <hr data-ke-style="style8" data-ke-type="horizontalRule" />
+                                <p><span style="color: #409d00;">Q2-1.</span> <span style="color: #000000;">Create a program that converts Fahrenheit to Celsius.</span></p>
+                                <p><span style="color: #000000;">&nbsp; &nbsp; &nbsp; Formula: C = 5/9 (F - 32)</span></p>
+                                <p><span style="color: #409d00;">A2-1. </span></p>
+                                <p><span style="color: #000000;">The program should be able to convert any value inputted in Fahrenheit to Celsius.</span></p>
+                                <pre id="code_1597647280277" class="python" data-ke-type="codeblock" data-ke-language="python"><code>F = int(input())</code></pre>
+                                <p><span style="color: #000000;">Here, the computer receives a value and converts it into a number type. </span></p>
+                                <p><span style="color: #000000;">Next, we use the formula given above to calculate the value in Celsius.</span></p>
+                                <pre id="code_1597647474648" class="python" data-ke-type="codeblock" data-ke-language="python"><code>C = 5/9* (F - 32)<br>print("Current weather in Celsius is: ", C)</code></pre>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #000000;"><span style="color: #409d00;">Q2-2.</span> How hot is 67 Fahrenheit in Celsius?</span></p>
+                                <p><span style="color: #409d00;">A2-2.</span></p>
+                                <pre id="code_1597647280277" class="python" data-ke-type="codeblock" data-ke-language="python"><code>F = int(input())<br>C = 5/9* (F - 32)<br>print("Current weather in Celsius is: ", C)<br><br>67<br>Current weather in Celsius is: 19.44444444444446C</code></pre>
                             </div>
+                            <!-- END: Post Text -->
+                            
+                            </div>
+                            <!-- END: Post Share -->
                         </div>
+                        <!-- END: Post -->
+                        <div class="nk-gap-3"></div>
                     </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Cities">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-2-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Input / Print Function </a></h2>
-                            <div class="nk-post-date"> September 13, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>Input function, Print function, Example Questions (Income calculator, Celcius convertor).</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Nature">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-3-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Nature</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">The History of Nature</a></h2>
-                            <div class="nk-post-date"> August 27, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>Third is fly. From one under in itself two waters, all own. Said male shall greater own grass.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Branding">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-4-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Branding</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Are you doing the Right Way?</a></h2>
-                            <div class="nk-post-date"> August 14, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>Which all, morning isn't. Female and own living dry, and morning lesser first he stars under years thing.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Design">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-5-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Design</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Ten things about Photography</a></h2>
-                            <div class="nk-post-date"> August 14, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>Be forth, god for rule face abundantly all our two winged made. Is whose morning female.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Design">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-6-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Design</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Why you should Always First</a></h2>
-                            <div class="nk-post-date"> August 14, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>Lights give have herb. First. Seed lesser his a fruit. Stars good divide fish appear don't, third deep.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Cities">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-9-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Cities</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">My Favorite Place on earth is...</a></h2>
-                            <div class="nk-post-date"> June 21, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>There hath can't rule open fruitful every, our under gathering replenish and. Unto it fill him.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Nature">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-7-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Nature</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Five things about Nature</a></h2>
-                            <div class="nk-post-date"> Jule 3, 2018 </div>
-                            <div class="nk-post-text">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Branding">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-8-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Branding</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">The History of Branding</a></h2>
-                            <div class="nk-post-date"> June 26, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>Life and. Be light, him second signs his midst place you're open also fish grass yielding, very their it so.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
                 </div>
-                <!-- END: Posts List -->
-                <div class="nk-gap-4"></div>
             </div>
             <!-- START: Pagination -->
             <div class="nk-pagination nk-pagination-center">
-                <a href="#">Load More Posts</a>
+                <div class="container">
+                    <a class="nk-pagination-prev" href="#"><span class="pe-7s-angle-left"></span> Previous Post</a>
+                    <a class="nk-pagination-center" href="blog-masonry-2.html"><span class="nk-icon-squares"></span></a>
+                    <a class="nk-pagination-next" href="#">Next Post <span class="pe-7s-angle-right"></span> </a>
+                </div>
             </div>
             <!-- END: Pagination -->
             <!--
