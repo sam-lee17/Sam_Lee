@@ -13,7 +13,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SL | Python</title>
+        <title>Sam Lee | L / T / D / S</title>
         <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
         <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
         <meta name="author" content="nK">
@@ -41,6 +41,19 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-light.min.css" integrity="sha512-11xYl5MU0/AMaYnuBOXDDQdZnl5WGtLVidxqa0XUAXYf6cGnJShNpgtbmB/0MW6ypeev+9Bwj7I/J8wexX8ePw==" crossorigin="anonymous" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" integrity="sha512-jufbyMC+y5pH6dbL/adxAoUWkeGLwx6meC+9yoqY9CFLd4zpC9s5hU9c+stY2uHoYy2lIUih+HbYJIqTZxhCQQ==" crossorigin="anonymous"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <style> 
+        p{margin-bottom: 0.5rem}
+        pre{
+            padding:0px;
+            background-color:white;
+        }
+        </style>
     </head>
     <!--
     Additional Classes:
@@ -59,11 +72,11 @@
             .nk-navbar-transparent-always
             .nk-navbar-white-text-on-top
     -->
-             <nav class="nk-navbar nk-navbar-top">
+            <nav class="nk-navbar nk-navbar-top" style="padding:10px !important">
                 <div class="container">
                     <div class="nk-nav-table">
                         <a href="index.html" class="nk-nav-logo">
-                            <img src="assets/images/logo.svg" alt="" width="85">
+                            <img src="assets/images/Logo_final.png" alt="" width="85" style="padding:0px;margin:0px">
                         </a>
                         <ul class="nk-nav nk-nav-right d-none d-lg-block" data-nav-mobile="#nk-nav-mobile">
                             <li class="active nk-drop-item">
@@ -146,7 +159,7 @@
 -->
         <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
             <div class="nk-navbar-bg">
-                <div class="bg-image" style="background-image: url('assets/images/bg-menu.jpg')"></div>
+                <div class="bg-image" style="background-image: url('../assets/images/bg-menu.jpg')"></div>
             </div>
             <div class="nk-nav-table">
                 <div class="nk-nav-row">
@@ -192,181 +205,117 @@
         </nav>
         <!-- END: Navbar Mobile -->
         <div class="nk-main">
+            <!-- START: Header Title -->
+            <!--
+    Additional Classes:
+        .nk-header-title-sm
+        .nk-header-title-md
+        .nk-header-title-lg
+        .nk-header-title-xl
+        .nk-header-title-full
+        .nk-header-title-parallax
+        .nk-header-title-parallax-opacity
+-->
+            <div class="nk-header-title nk-header-title-lg nk-header-title-parallax nk-header-title-parallax-opacity">
+                <div class="bg-image">
+                    <div style="background-image: url('../assets/images/post-6.jpg');"></div>
+                </div>
+                <div class="nk-header-table">
+                    <div class="nk-header-table-cell">
+                        <div class="container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Header Title -->
             <div class="container">
-                <!-- START: Filter -->
-                <div class="nk-pagination nk-pagination-nobg nk-pagination-center">
-                    <a href="#nk-toggle-filter"><span class="nk-icon-squares"></span></a>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="nk-gap-4"></div>
+                        <!-- START: Post -->
+                        <div class="nk-blog-post nk-blog-post-single">
+                            <h1 class="display-4">List / Tuple / Dictionary / Set</h1>
+                            <div class="nk-post-meta">
+                                <div class="nk-post-date">October 18, 2020</div>
+                                <div class="nk-post-category"><a href="#">Python</a></div>
+                            </div>
+                            <!-- START: Post Text -->
+                            <div class="nk-post-text">
+                                <p><span style="color: #0593d3;"><b>List</b></span></p>
+                                <p><span style="color: #000000;">1. Multiple data are grouped together as a list. (Data type can be different)</span></p>
+                                <p><span style="color: #000000;">2. Square brackets are used to represent a list</span></p>
+                                <p><span style="color: #000000;">3. It has an order, which means indexing and slicing functions are possible.</span></p>
+                                <p><span style="color: #000000;">4. The value of the data can be changed.</span></p>
+                                <p><span style="color: #000000;">5. Data are separated by commas.</span></p>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #ef6f53;">Indexing</span></p>
+                                <p><span style="color: #ef6f53;">ex)</span></p>
+                                <pre id="code_1599988857778" class="python" data-ke-language="python" data-ke-type="codeblock"><code>l = [1, 1.4, 'data', [1,2,3]]<br>print (1[2])<br>data</code></pre>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #ef6f53;">Slicing</span></p>
+                                <p><span style="color: #ef6f53;">ex)&nbsp;</span></p>
+                                <pre id="code_1599989071238" class="python" data-ke-language="python" data-ke-type="codeblock"><code>print (l[0:3])<br>1, 1.4, 'data'</code></pre>
+                                <p><span style="color: #ef6f53;">ex)</span></p>
+                                <pre id="code_1599989208061" class="python" data-ke-language="python" data-ke-type="codeblock"><code>l = [1, 2, 3, 4],[5, 6, 7]]<br>print ([0][2])<br>3</code></pre>
+                                <p>&nbsp;</p>
+                                <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style5" />
+                                <p><span style="color: #0593d3;"><b>Tuple</b></span></p>
+                                <p><span style="color: #000000;">A tuple is the basic data type used to represent more than one value.</span></p>
+                                <p><span style="color: #000000;">It has the same characteristics as a list except for 2 things, which means indexing and slicing functions can be used.</span></p>
+                                <p><span style="color: #000000;">1. It is represented by a parenthesis instead of square brackets.</span></p>
+                                <p><span style="color: #000000;">2. The values of data cannot be manipulated.</span></p>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #000000;">If a tuple offers less efficient functions, why do we use it?</span></p>
+                                <p><span style="color: #000000;">Tuple has more memory space and fewer unnecessary functions. So when the number of data increases infinitely, a computer performs much faster with a tuple than a list.</span></p>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #409d00;">Characteristics</span></p>
+                                <p><span style="color: #000000;">Tuple can be changed into a list and vise versa.</span></p>
+                                <p><span style="color: #ef6f53;">ex)&nbsp;</span></p>
+                                <pre id="code_1599990320870" class="python" data-ke-language="python" data-ke-type="codeblock"><code>T = tuple(4, 67.8, 'hi there', [4,246,84])<br>T = list(T)<br>[4, 67.8, 'hi there', [4,246,84]]</code></pre>
+                                <p>&nbsp;</p>
+                                <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style5" />
+                                <p><span style="color: #0593d3;"><b>Dictionary</b></span></p>
+                                <p><span style="color: #000000;">1. Dictionary is represented by braces.</span></p>
+                                <p style="color: #000000;">2. There is no order.</p>
+                                <p style="color: #000000;">3. It consists of keys and values. You can think that you are assigning certain values or a key.</p>
+                                <p style="color: #000000;">(More than one values can be assigned to one key)</p>
+                                <p style="color: #000000;">4. The keys are immutable, which means that only string, number, and tuple are possible data types for keys. On the other hand, all data type is available for values.</p>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #ef6f53;">ex)&nbsp;</span></p>
+                                <pre id="code_1603018222742" class="python" data-ke-language="python" data-ke-type="codeblock"><code>dic = {'d':123, 'i':'hello', 'c':[4,5,6]}</code></pre>
+                                <p style="color: #000000;"><span style="color: #ef6f53;">ex)</span> How to print out just the items</p>
+                                <pre id="code_1603018368597" class="python" data-ke-language="python" data-ke-type="codeblock"><code>print (dic['d'])<br>123</code></pre>
+                                <p style="color: #000000;"><span style="color: #ef6f53;">ex)</span> How to append a new set of key and item</p>
+                                <pre id="code_1603018451519" class="python" data-ke-language="python" data-ke-type="codeblock"><code>dic[7] = ('n','e','w')<br>print (dic)<br>{'d':123, 'i':'hello', 'c':[4,5,6], 7:('n','e','w')}</code></pre>
+                                <p style="color: #000000;"><span style="color: #ef6f53;">ex)</span> How to change the value of an existing key</p>
+                                <pre id="code_1603018611056" class="python" data-ke-language="python" data-ke-type="codeblock"><code>dic['i'] = 'hi'<br>print (dic)<br>{'d':123, 'i':'hi', 'c':[4,5,6], 7:('n','e','w')}</code></pre>
+                                <p style="color: #000000;"><span style="color: #ef6f53;">ex)</span> How to delete a key and its corresponding value</p>
+                                <pre id="code_1603018703539" class="python" data-ke-language="python" data-ke-type="codeblock"><code>del dic['c']<br>print (dic)<br>{'d':123, 'i':'hi', 7:('n','e','w')}</code></pre>
+                                <p>&nbsp;</p>
+                                <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style5" />
+                                <p><b><span style="color: #0593d3;">Set</span></b></p>
+                                <p><span style="color: #000000;">1. It is represented by parentheses ( ).</span></p>
+                                <p><span style="color: #000000;">2. It does not have an order nor repetition. So it is commonly used to eliminate any repetition in the set of data.</span><span style="color: #000000;"></span></p>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #ef6f53;">ex)</span></p>
+                                <pre id="code_1603019194445" class="python" data-ke-language="python" data-ke-type="codeblock"><code>a = set('hello')<br>print (a)<br>'e', 'h', 'o', 'l'</code></pre>
+                                <p style="color: #000000;">Because the set does not have an order, if you run the previous code once more, you can receive another value such as these indicated below:</p>
+                                <pre id="code_1603019216775" class="python" data-ke-language="python" data-ke-type="codeblock"><code>'h', 'l', 'o', 'e'</code></pre>
+                                <p><span style="color: #ef6f53;">ex)</span></p>
+                                <pre id="code_1603019151763" class="python" data-ke-language="python" data-ke-type="codeblock"><code>s = (1,2,3,4,5,6,7,3,5,2,6,8,1,9,4,2,67)<br>s = set(s)<br>print (1,2,3,4,5,6,7,8,9,67)</code></pre>
+                            </div>
+                            <!-- END: Post Text -->
+                            <!-- START: Post Share -->
+                            
+                            <!-- END: Post Share -->
+                        </div>
+                        <!-- END: Post -->
+                        <div class="nk-gap-3"></div>
+                    </div>
                 </div>
-                <ul class="nk-isotope-filter">
-                    <li class="active" data-filter="*">All</li>
-                    <li data-filter="Nature">Nature</li>
-                    <li data-filter="Cities">Cities</li>
-                    <li data-filter="Branding">Branding</li>
-                    <li data-filter="Design">Design</li>
-                </ul>
-                <!-- END: Filter -->
-                <!-- START: Posts List -->
-                <div class="nk-blog-isotope nk-isotope nk-isotope-gap nk-isotope-2-cols">
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Nature">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="Basic_grammar.html">
-                                    <img src="../assets/images/post-1-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Python Basic Grammar</a></h2>
-                            <div class="nk-post-date"> September 10, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>Data Type, Print function, Substitution, Annotation.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Cities">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="Input_Print.html">
-                                    <img src="../assets/images/post-2-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Input / Print Function </a></h2>
-                            <div class="nk-post-date"> September 13, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>Input function, Print function, Example Questions (Income calculator, Celcius convertor).</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Nature">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="data_types1.html">
-                                    <img src="../assets/images/post-3-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="data_types1.html">Data Types 1</a></h2>
-                            <div class="nk-post-date"> September 26, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>Numeric data type, String data type, Bool data type</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Branding">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="data_types2.html">
-                                    <img src="../assets/images/post-4-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Data Types 2</a></h2>
-                            <div class="nk-post-date"> October 18, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>List data type, Tuple data type, Dictionary data type, Set data type</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Design">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-5-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Design</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Ten things about Photography</a></h2>
-                            <div class="nk-post-date"> August 14, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>Be forth, god for rule face abundantly all our two winged made. Is whose morning female.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Design">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-6-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Design</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Why you should Always First</a></h2>
-                            <div class="nk-post-date"> August 14, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>Lights give have herb. First. Seed lesser his a fruit. Stars good divide fish appear don't, third deep.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Cities">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-9-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Cities</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">My Favorite Place on earth is...</a></h2>
-                            <div class="nk-post-date"> June 21, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>There hath can't rule open fruitful every, our under gathering replenish and. Unto it fill him.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Nature">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-7-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Nature</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Five things about Nature</a></h2>
-                            <div class="nk-post-date"> Jule 3, 2018 </div>
-                            <div class="nk-post-text">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Branding">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-8-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Branding</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">The History of Branding</a></h2>
-                            <div class="nk-post-date"> June 26, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>Life and. Be light, him second signs his midst place you're open also fish grass yielding, very their it so.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                </div>
-                <!-- END: Posts List -->
-                <div class="nk-gap-4"></div>
             </div>
-            <!-- START: Pagination -->
-            <div class="nk-pagination nk-pagination-center">
-                <a href="#">Load More Posts</a>
-            </div>
+            <!-- START: Comments -->
+            
             <!-- END: Pagination -->
             <!--
     START: Footer
