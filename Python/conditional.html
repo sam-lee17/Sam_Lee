@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!--
+    Name: Snow - Minimal & Clean Portfolio HTML Template
+    Version: 1.2.2
+    Author: nK, unvab
+    Website: https://nkdev.info/, http://unvab.com/
+    Purchase: https://1.envato.market/snow-html-info
+    Support: https://nk.ticksy.com/
+    License: You must have a valid license purchased only from ThemeForest (the above link) in order to legally use the theme for your project.
+    Copyright 2020.
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Python | Conditional Statement</title>
+        <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
+        <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
+        <meta name="author" content="nK">
+        <link rel="icon" type="image/png" href="../assets/images/Logo_final.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- START: Styles -->
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+        <!-- FontAwesome -->
+        <script defer src="../assets/vendor/fontawesome-free/js/all.js"></script>
+        <script defer src="../assets/vendor/fontawesome-free/js/v4-shims.js"></script>
+        <!-- Stroke 7 -->
+        <link rel="stylesheet" href="../assets/vendor/pixeden-stroke-7-icon/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+        <!-- Flickity -->
+        <link rel="stylesheet" href="../assets/vendor/flickity/dist/flickity.min.css">
+        <!-- Photoswipe -->
+        <link rel="stylesheet" type="text/css" href="../assets/vendor/photoswipe/dist/photoswipe.css">
+        <link rel="stylesheet" type="text/css" href="../assets/vendor/photoswipe/dist/default-skin/default-skin.css">
+        <!-- Snow -->
+        <link rel="stylesheet" href="../assets/css/snow.css">
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="../assets/css/custom.css">
+        <!-- END: Styles -->
+        <!-- jQuery -->
+        <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-light.min.css" integrity="sha512-11xYl5MU0/AMaYnuBOXDDQdZnl5WGtLVidxqa0XUAXYf6cGnJShNpgtbmB/0MW6ypeev+9Bwj7I/J8wexX8ePw==" crossorigin="anonymous" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" integrity="sha512-jufbyMC+y5pH6dbL/adxAoUWkeGLwx6meC+9yoqY9CFLd4zpC9s5hU9c+stY2uHoYy2lIUih+HbYJIqTZxhCQQ==" crossorigin="anonymous"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <style> 
+        p{margin-bottom: 0.5rem}
+        pre{
+            padding:0px;
+            background-color:white;
+        }
+        </style>
+    </head>
+    <!--
+    Additional Classes:
+        .nk-bg-gradient
+-->
+    <body>
+        <header class="nk-header nk-header-opaque">
+            <!--
+        START: Navbar
+
+        Additional Classes:
+            .nk-navbar-lg
+            .nk-navbar-sticky
+            .nk-navbar-autohide
+            .nk-navbar-transparent
+            .nk-navbar-transparent-always
+            .nk-navbar-white-text-on-top
+    -->
+            <nav class="nk-navbar nk-navbar-top">
+                <div class="container">
+                    <div class="nk-nav-table">
+                        <a href="index.html" class="nk-nav-logo">
+                            <img src="../assets/images/logo.svg" alt="" width="85">
+                        </a>
+                        <ul class="nk-nav nk-nav-right d-none d-lg-block" data-nav-mobile="#nk-nav-mobile">
+                            <li class="active nk-drop-item">
+                                <a href="index.html"> Home </a>
+                                <ul class="dropdown">
+                                </ul>
+                            </li>
+                            <li class=" nk-drop-item">
+                                <a href="#"> Yoga </a>
+                                <ul class="dropdown">
+                                    <li class=" nk-drop-item">
+                                        <!-- work-single-1.html -->
+                                        <a href="#"> About Hatha Yoga </a>
+                                    </li>
+                                    <li class=" nk-drop-item">
+                                        <a href="Asanas/asanas.html"> Asanas </a>
+                                    </li>
+                                    <li class=" nk-drop-item">
+                                        <!-- work-2-style-5.html -->
+                                        <a href="#"> RYT Certification </a>
+                                    </li>
+                                </ul>
+
+                            <li class=" nk-drop-item">
+                                <!-- blog-masonry-3.html -->
+                                <a href="#"> Coding </a>
+                                <ul class="dropdown">
+                                    <li class="nk-drop-item">
+                                        <a href="Python/python.html"> Programming Language </a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <a href="Python/python.html"> Python </a>
+                                            </li>    
+                                        </ul>
+                                    </li>
+                                    <li class=" nk-drop-item">
+                                        <!-- blog-masonry-2.html -->
+                                        <a href="Data_Science/deeplearning.html"> Data Science </a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <!-- blog-masonry-2.html -->
+                                                <a href="Data_Science/deeplearning.html"> Deep Learning </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nk-drop-item">
+                                        <!-- blog-classic.html -->
+                                        <a href="#"> Independent Projects </a>
+                                        <ul class="dropdown">
+                                            <li>
+                                                <!-- blog-classic.html -->
+                                                <a href="#"> Independent Projects </a>
+                                            </li>
+                                        </ul> 
+                                    </li>
+                                </ul>
+                            </li>
+                        <ul class="nk-nav nk-nav-right nk-nav-icons">
+                            <li class="single-icon d-lg-none">
+                                <a href="#" class="nk-navbar-full-toggle">
+                                    <span class="nk-icon-burger">
+                                        <span class="nk-t-1"></span>
+                                        <span class="nk-t-2"></span>
+                                        <span class="nk-t-3"></span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- END: Navbar -->
+        </header>
+        <!--
+    START: Navbar Mobile
+
+    Additional Classes:
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+-->
+        <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+            <div class="nk-navbar-bg">
+                <div class="bg-image" style="background-image: url('../assets/images/bg-menu.jpg')"></div>
+            </div>
+            <div class="nk-nav-table">
+                <div class="nk-nav-row">
+                    <div class="container">
+                        <div class="nk-nav-header">
+                            <div class="nk-nav-logo">
+                                <a href="index.html" class="nk-nav-logo">
+                                    <img src="../assets/images/logo-light.svg" alt="" width="85">
+                                </a>
+                            </div>
+                            <div class="nk-nav-close nk-navbar-full-toggle">
+                                <span class="nk-icon-close"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-nav-row-full nk-nav-row">
+                    <div class="nano">
+                        <div class="nano-content">
+                            <div class="nk-nav-table">
+                                <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                                    <ul class="nk-nav">
+                                        <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-nav-row">
+                    <div class="container">
+                        <div class="nk-nav-social">
+                            <ul>
+                                <li><a href="https://twitter.com/nkdevv"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/unvabdesign/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://dribbble.com/_nK"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="https://www.instagram.com/unvab/"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar Mobile -->
+        <div class="nk-main">
+            <!-- START: Header Title -->
+            <!--
+    Additional Classes:
+        .nk-header-title-sm
+        .nk-header-title-md
+        .nk-header-title-lg
+        .nk-header-title-xl
+        .nk-header-title-full
+        .nk-header-title-parallax
+        .nk-header-title-parallax-opacity
+-->
+            <div class="nk-header-title nk-header-title-lg nk-header-title-parallax nk-header-title-parallax-opacity">
+                <div class="bg-image">
+                    <div style="background-image: url('../assets/images/post-6.jpg');"></div>
+                </div>
+                <div class="nk-header-table">
+                    <div class="nk-header-table-cell">
+                        <div class="container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Header Title -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="nk-gap-4"></div>
+                        <!-- START: Post -->
+                        <div class="nk-blog-post nk-blog-post-single">
+                            <h1 class="display-4">Conditional Statement<br>(Control Statement 1)</h1>
+                            <div class="nk-post-meta">
+                                <div class="nk-post-date">December 13, 2020</div>
+                                <div class="nk-post-category"><a href="#">Python</a></div>
+                            </div>
+                            <!-- START: Post Text -->
+                            <div class="nk-post-text">
+                                <p><span style="color: #0593d3;"><b>Control Statement</b></span></p>
+                                <p>Control Statement allows you to control the order of the programming. In general, the code is executed sequentially when the program is running. Once the control statement is used, however, the sequence of the code is manipulated, and the computer returns the value depending on the influence of the control statement.</p>
+                                <p>Here, there are two types of control statements: a conditional statement and a loop statement. This time, I will explain the control statement.</p>
+                                <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style5" />
+                                <p><span style="color: #0593d3;"><b>Conditional Statement</b></span></p>
+                                <p>1. Conditional Statements only flow the code when it satisfies the condition.</p>
+                                <p>2. They are represented by a colon and an indent to indicate the portion of the code that belongs to conditional statements.</p>
+                                <p>3. There are three ways to represent the conditions - if statement, elif statement, and else statement.</p>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #409d00;">If Statement</span></p>
+                                <p><span style="color: #000000;">If Statement indicates the start of the conditional statement.</span></p>
+                                <pre id="code_1607858004957" class="python" data-ke-language="python" data-ke-type="codeblock"><code>a = 1<br>if a &gt; 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(1)<br>if a &lt; 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(-1)<br><br>1</code></pre>
+                                <p>=&gt; If 'a' is greater than 0, print 1. If 'a' is less than 0, print -1. Because 'a' is greater than 0, it satisfies the first condition, and, as a result, the computer prints 1.</p>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #409d00;">Elif Statement</span></p>
+                                <p>Elif Statement has the same function as if statement, but it is used to add more conditions.</p>
+                                <pre id="code_1607858328319" class="python" data-ke-language="python" data-ke-type="codeblock"><code>a = 4<br>if a == 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;print (1)<br>elif a == 2:<br>&nbsp;&nbsp;&nbsp;&nbsp;print (2)<br>elif a == 3:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(3)<br>elif a == 4:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(4)<br><br>4</code></pre>
+                                <p>This single conditional statement encompasses 4 conditions.</p>
+                                <p>&nbsp;</p>
+                                <p><span style="color: #409d00;">Else Statement</span></p>
+                                <p>If the input does not satisfy any conditions mentioned above, it is affected by Else Statement.</p>
+                                <pre id="code_1607858618127" class="python" data-ke-language="python" data-ke-type="codeblock"><code>a = 5<br>if a == 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;print (1)<br>elif a == 2:<br>&nbsp;&nbsp;&nbsp;&nbsp;print (2)<br>elif a == 3:<br>&nbsp;&nbsp;&nbsp;&nbsp;print (3)<br>else:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(4)<br><br>4</code></pre>
+                                <p>As 'a' does not satisfy any of the conditions in if or elif statements, it is automatically considered to satisfy the else statement.</p>
+                                <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style5" />
+                                <p>Q1.</p>
+                                <p>A) Create a letter grade determinator based on this grading scale. (A numeric grade is a whole number)</p>
+                                <table style="border-collapse: collapse; width: 33.4852%;" border="1">
+                                <tbody>
+                                <tr>
+                                <td style="width: 16.0385%; text-align: center;" colspan="2">Grading Scale</td>
+                                </tr>
+                                <tr>
+                                <td style="width: 16.0385%; text-align: center;">Letter Grade</td>
+                                <td style="width: 15.6682%; text-align: center;">Numeric Grade (%)</td>
+                                </tr>
+                                <tr>
+                                <td style="width: 16.0385%; text-align: center;">A</td>
+                                <td style="width: 15.6682%; text-align: center;">90 - 100 %</td>
+                                </tr>
+                                <tr>
+                                <td style="width: 16.0385%; text-align: center;">B</td>
+                                <td style="width: 15.6682%; text-align: center;">80 - 89 %</td>
+                                </tr>
+                                <tr>
+                                <td style="width: 16.0385%; text-align: center;">C</td>
+                                <td style="width: 15.6682%; text-align: center;">70 - 79 %</td>
+                                </tr>
+                                <tr>
+                                <td style="width: 16.0385%; text-align: center;">D</td>
+                                <td style="width: 15.6682%; text-align: center;">60 - 69 %</td>
+                                </tr>
+                                <tr>
+                                <td style="width: 16.0385%; text-align: center;">F</td>
+                                <td style="width: 15.6682%; text-align: center;">0 - 59 %</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                                <p>&nbsp;</p>
+                                <pre id="code_1607859569541" class="python" data-ke-language="python" data-ke-type="codeblock"><code>score = int(input("Please enter your numeric grade"))<br>if 90 &lt;= score &lt;= 100:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Your letter grade is A!")<br>elif 80 &lt;= score &lt; 90:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Your letter grade is B!")<br>elif 70 &lt;= score &lt; 80:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Your letter grade is C!")<br>elif 60 &lt;= score &lt; 70:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Your letter grade is D!")<br>else:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Your letter grade is F!")</code></pre>
+                                <p>B) Add another condition that if a student has an A and received an effort mark, he or she will earn an A+.</p>
+                                <pre id="code_1607859882881" class="python" data-ke-language="python" data-ke-type="codeblock"><code>score = int(input("Please enter your numeric grade"))<br>EF = int(input("Please enter 1 if you have received an effort mark. If not, please enter 0."))<br>if 90 &lt;= score &lt;= 100:<br>&nbsp;&nbsp;&nbsp;&nbsp;if EF = 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Your letter grade is A+!")<br>&nbsp;&nbsp;&nbsp;&nbsp;else:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Your letter grade is A!")<br>elif 80 &lt;= score &lt; 90:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Your letter grade is B!")<br>elif 70 &lt;= score &lt; 80:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Your letter grade is C!")<br>elif 60 &lt;= score &lt; 70:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Your letter grade is D!")<br>else:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Your letter grade is F!")</code></pre>
+                                <p>&nbsp;</p>
+                            </div>
+                            <!-- END: Post Text -->
+                            <!-- START: Post Share -->
+                            
+                            <!-- END: Post Share -->
+                        </div>
+                        <!-- END: Post -->
+                        <div class="nk-gap-3"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- END: Reply -->
+            <!-- START: Pagination -->
+            <div class="nk-pagination nk-pagination-center">
+                <div class="container">
+                    <a class="nk-pagination-prev" href="#"><span class="pe-7s-angle-left"></span> Previous Post</a>
+                    <a class="nk-pagination-center" href="blog-masonry-2.html"><span class="nk-icon-squares"></span></a>
+                    <a class="nk-pagination-next" href="#">Next Post <span class="pe-7s-angle-right"></span> </a>
+                </div>
+            </div>
+            <!-- END: Pagination -->
+            <!--
+    START: Footer
+
+    Additional Classes:
+        .nk-footer-transparent
+-->
+            <footer class="nk-footer">
+                <div class="nk-footer-cont">
+                    <div class="container text-center">
+                        <div class="nk-footer-text">
+                            <p>2020 &copy; Design by Samantha Lee</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- END: Footer -->
+        </div>
+        <!-- START: Scripts -->
+        <!-- GSAP -->
+        <script src="../assets/vendor/gsap/src/minified/TweenMax.min.js"></script>
+        <script src="../assets/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+        <!-- Popper -->
+        <script src="../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="../assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- nK Share -->
+        <script src="../assets/plugins/nk-share/nk-share.js"></script>
+        <!-- Sticky Kit -->
+        <script src="../assets/vendor/sticky-kit/dist/sticky-kit.min.js"></script>
+        <!-- Jarallax -->
+        <script src="../assets/vendor/jarallax/dist/jarallax.min.js"></script>
+        <script src="../assets/vendor/jarallax/dist/jarallax-video.min.js"></script>
+        <!-- Flickity -->
+        <script src="../assets/vendor/flickity/dist/flickity.pkgd.min.js"></script>
+        <!-- Isotope -->
+        <script src="../assets/vendor/isotope-layout/dist/isotope.pkgd.min.js"></script>
+        <!-- Photoswipe -->
+        <script src="../assets/vendor/photoswipe/dist/photoswipe.min.js"></script>
+        <script src="../assets/vendor/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+        <!-- Jquery Form -->
+        <script src="../assets/vendor/jquery-form/dist/jquery.form.min.js"></script>
+        <!-- Jquery Validation -->
+        <script src="../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+        <!-- Hammer.js -->
+        <script src="../assets/vendor/hammerjs/hammer.min.js"></script>
+        <!-- Social Likes -->
+        <script src="../assets/vendor/social-likes/dist/social-likes.min.js"></script>
+        <!-- NanoSroller -->
+        <script src="../assets/vendor/nanoscroller/bin/javascripts/jquery.nanoscroller.js"></script>
+        <!-- Keymaster -->
+        <script src="../assets/vendor/keymaster/keymaster.js"></script>
+        <!-- Snow -->
+        <script src="../assets/js/snow.min.js"></script>
+        <script src="../assets/js/snow-init.js"></script>
+        <!-- END: Scripts -->
+    </body>
+</html>
