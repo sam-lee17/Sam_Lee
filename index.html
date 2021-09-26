@@ -41,7 +41,14 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-        
+        <script>
+            $(document).ready(function () {
+                $("#header").load("nav.html", function () {
+                //페이지 별로 다른 메뉴 css 적용도 가능
+                    document.getElementById("sub_nav").classList.add("show");
+                });
+            })
+        </script>
     </head>
     <!--
     Additional Classes:
@@ -336,13 +343,6 @@
         <script src="assets/js/snow.min.js"></script>
         <script src="assets/js/snow-init.js"></script>
         <!-- END: Scripts -->
-        <script>
-            $(document).ready(function () {
-                $("#header").load("nav.html", function () {
-                //페이지 별로 다른 메뉴 css 적용도 가능
-                    document.getElementById("sub_nav").classList.add("show");
-                });
-            })
-        </script>
+        
     </body>
 </html>
