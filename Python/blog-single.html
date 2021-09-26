@@ -13,7 +13,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Python | For Loop</title>
+        <title>Python | Lotto</title>
         <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
         <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
         <meta name="author" content="nK">
@@ -234,54 +234,86 @@
                         <div class="nk-gap-4"></div>
                         <!-- START: Post -->
                         <div class="nk-blog-post nk-blog-post-single">
-                            <h1 class="display-4">Loop Statement 1 (For Loop)</h1>
+                            <h1 class="display-4">Lotto generator</h1>
                             <div class="nk-post-meta">
-                                <div class="nk-post-date">December 16, 2020</div>
+                                <div class="nk-post-date">August 14, 2018</div>
                                 <div class="nk-post-category"><a href="#">Python</a></div>
                             </div>
                             <!-- START: Post Text -->
                             <div class="nk-post-text">
-                                <p><span style="color: #0593d3;"><b>Loop Statement</b></span></p>
-                                <p>As mentioned in the previous post, there are two types of control statements: Conditional statements and Loop statements. In this post, I am going to talk about the loop statement.</p>
-                                <p><span style="color: #333333;">While you are writing the code, you will realize that there are times when some codes are almost identical. Then you think, "I hope there is a special code that allows the computer to repeat it several times without me having to write that code every single time". Loop statements quench our thirst for more succinct codes. </span>Evident from the name, the loop statements basically put the code in a loop, repeating a certain part for a certain number of times. Hence, it is important to inform the computer correctly which portion of the code and how many times you want to repeat it. There are two types of loop statements, which are for statements and while statements.</p>
-                                <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style5" />
-                                <p><span style="color: #0593d3;"><b>For Statements</b></span></p>
-                                <pre id="code_1608002645861" class="python" data-ke-language="python" data-ke-type="codeblock"><code>for i in a:<br>&nbsp;&nbsp;&nbsp;&nbsp;what you want the computer to do with the input</code></pre>
-                                <p>This is the basic representation of for statement. Similar to a conditional statement, it is indicated by a colon and an indent. For Statements bring one data value 'a' (after 'in') at a time to 'i' and perform the code. Also, they only accept collective data types (collection of multiple data values).&nbsp;</p>
-                                <p>&nbsp;</p>
-                                <p>Instead of writing</p>
-                                <pre id="code_1608001824000" class="python" data-ke-language="python" data-ke-type="codeblock"><code>print (1)<br>print (2)<br>print (3)
-                                    <br>1<br>2<br>3</code></pre>
-                                <p>, using for statement</p>
-                                <pre id="code_1608002597842" class="python" data-ke-language="python" data-ke-type="codeblock"><code>for i in [1, 2, 3]:<br>&nbsp;&nbsp;&nbsp;&nbsp;print (i)
-                                    <br>1<br>2<br>3</code></pre>
-                                <p>can print the same values more efficiently and quickly.</p>
-                                <p>Here, it might be hard to notice the effectiveness of for statements since we are dealing with only 3 numbers. But imagine having to print 1000000 numbers. As the code gets more complex and multi-stepped, the benefit of for statements become more outstanding.&nbsp;</p>
-                                <p>&nbsp;</p>
-                                <p><span style="color: #409d00;">Range</span></p>
-                                <p><span style="color: #000000;">Range function can be used when you need a wide range of consecutive numbers.</span></p>
-                                <pre id="code_1608003023203" class="python" data-ke-language="python" data-ke-type="codeblock"><code>for i in range(1, 10):<br>&nbsp;&nbsp;&nbsp;&nbsp;print (i)
-                                    <br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</code></pre>
-                                <p>We need to keep in mind that the range function does not include the second number in the bracket. So the code above only printed numbers from 1 to 9 (less than 10).</p>
-                                <p>&nbsp;</p>
-                                <p>However, if you do not want to use consecutive numbers, you can still use the step function.</p>
-                                <pre id="code_1608003626582" class="python" data-ke-language="python" data-ke-type="codeblock"><code>for i in range(1, 100, 2):<br>&nbsp;&nbsp;&nbsp;&nbsp;print (1)</code></pre>
-                                <p>&nbsp;</p>
-                                <p>This code will print every other number from 1 to 99.</p>
-                                <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style5" />
-                                <p>Q. Create a code that prints out a multiplication table of the input. (If you enter 5 as the input, the code will print out 5 times multiplication table)</p>
-                                <pre id="code_1608023022909" class="python" data-ke-language="python" data-ke-type="codeblock"><code>MT = int(input("which multiplication table do you want to print?"))</code></pre>
-                                <p>First, you need to receive an input as an integer.</p>
-                                <p>Accounting for the format of multiplication tables is the key to resolving this question. The input entered - 'MT' - is multiplied from 1 to 9 each time, resulting in 'MT' times multiplication table.</p>
-                                <pre id="code_1608023287018" class="python" data-ke-language="python" data-ke-type="codeblock"><code>MT = int(input("which multiplication table do you want to print?"))
-                                    <br>for m in range(1, 10):<br>&nbsp;&nbsp;&nbsp;&nbsp;print(MT, 'X', m, '=', MT*m)</code></pre>
-                                <p>&nbsp;</p>
-                                <p>If MT is 7, the computer will print out the below:</p>
-                                <pre id="code_1608023477114" class="python" data-ke-language="python" data-ke-type="codeblock"><code>7 X 1 = 7<br>7 X 2 = 14<br>7 X 3 = 21<br>7 X 4 = 28<br>7 X 5 = 35<br>7 X 6 = 42<br>7 X 7 = 49<br>7 X 8 = 56<br>7 X 9 = 63</code></pre>
+                                <p data-ke-size="size16"><span style="color: #409d00;">Q. Make a lotto generator that generates random 6 numbers in the range between 0 and 46 without repetition. (Hint: use for and while loops)</span></p>
+                                <p data-ke-size="size16">How can we generate random numbers? We can use a predefined function called <i>random</i>.</p>
+                                <pre id="code_1632651471496" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random</code></pre>
+                                <p data-ke-size="size16">To use this function, you need to import it at the beginning of the code to indicate that you are bringing information on random functions to the local computer. There are multiple functions encompassed in the random function, but here we are only going to use random.random (), which returns a random decimal number between 0 and 1. Therefore, we are going to multiply by 100 to get a number between 0 and 100.</p>
+                                <pre id="code_1632651684619" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>lotto = []</code></pre>
+                                <p data-ke-size="size16">The <i>lotto</i> list would harbor the 6 lotto numbers.</p>
+                                <pre id="code_1632651793300" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>lotto = []<br><br>for i in range(6):<br>&nbsp;&nbsp;&nbsp;&nbsp;while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = int(random.random ()*100)</code></pre>
+                                <p data-ke-size="size16">Now that we know how to return a random number, we need to repeat the random number returning code 6 times to get 6 different numbers.</p>
+                                <pre id="code_1632651953373" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
+                                lotto = []
+
+                                for i in range(6):
+                                    while True:
+                                        num = int(random.random ()*100)
+                                        if num &gt; 0 and num &lt; 46:
+                                            if num not in lotto:
+                                                lotto.append(num)
+                                                lotto.sort()
+                                                break</code></pre>
+                                <p data-ke-size="size16">This code will append the random number generated only if it is between 0 and 46 (the range of lotto numbers stated in the question) and not in the lotto list (since we need to avoid repetition). Then, the computer presents the lotto list in consecutive increase form.</p>
+                                <pre id="code_1632652234671" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>lotto = []<br><br>for i in range(6):<br>&nbsp;&nbsp;&nbsp;&nbsp;while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = int(random.random ()*100)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num &gt; 0 and num &lt; 46:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num not in lotto:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotto.append(num)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotto.sort()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>print(lotto)<br><br>[4, 5, 12, 14, 32, 42]</code></pre>
+                                <p data-ke-size="size16">Once we run the code, it would print out 6 random numbers in a list as shown above.</p>
+                                <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6" />
+                                <p data-ke-size="size16"><span style="color: #409d00;">Q. Find out how many times you need to try to win the lotto. Let's say that the winning lotto numbers are 4, 5, 12, 14, 32, 42 from the previous question.</span></p>
+                                <p data-ke-size="size16">Here, it is similar to the lotto generator, but you need to consider one more element: the winning lotto numbers. As you continue to produce random lotto lists, you need to constantly compare them with the winning lotto list. Also, you need two counting variables: one to count how many tries you had and another to count how many of the randomly generated numbers are equal to the winning lotto numbers.</p>
+                                <pre id="code_1632652787333" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>jackpot = [4, 5, 12, 14, 32, 42]<br>num = 0</code></pre>
+                                <p data-ke-size="size16">Similarly, we start by importing the <i>random</i> function. The <i>jackpot</i> is the winning lotto list that you are trying to get and the <i>num</i> is a counting variable indicating the number of attempts.</p>
+                                <pre id="code_1632652958235" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>jackpot = [4, 5, 12, 14, 32, 42]<br>num = 0<br>while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;num = num + 1<br>&nbsp;&nbsp;&nbsp;&nbsp;lotto = []<br>&nbsp;&nbsp;&nbsp;&nbsp;count = 0<br>&nbsp;&nbsp;&nbsp;&nbsp;for i in range (6):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while True: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = int(random.random ()*100)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num &gt; 0 and num &lt; 46:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num not in lotto:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotto.append(num)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</code></pre>
+                                <p data-ke-size="size16">The <i>count</i> variable counts how many of the randomly generated numbers are equal to the winning lotto numbers. Until here, there is not much difference from the previous question except for some additional variables.&nbsp;</p>
+                                <pre id="code_1632653213603" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
+                                jackpot = [4, 5, 12, 14, 32, 42]
+                                num = 0
+                                while True:
+                                    num = num + 1
+                                    lotto = []
+                                    count = 0
+                                    for i in range (6):
+                                        num = int(random.random ()*100)
+                                        if num &gt; 0 and num &lt; 46:
+                                            if num not in lotto:
+                                                lotto.append(num)
+                                                break
+                                    for i in range (6):
+                                        if jackpot[i] in lotto:
+                                            count = count + 1
+                                    if count == 6:
+                                            break</code></pre>
+                                <p data-ke-size="size16">This is the key part of the entire code. You keep comparing each number from the random lotto list and each from the winning lotto list. Then, when all 6 numbers are identical, we exit the loop since we have finally won the lotto.</p>
+                                <pre id="code_1632653387193" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
+                                jackpot = [4, 5, 12, 14, 32, 42]
+                                num = 0
+                                while True:
+                                    num = num + 1
+                                    lotto = []
+                                    count = 0
+                                    for i in range (6):
+                                        num = int(random.random ()*100)
+                                        if num &gt; 0 and num &lt; 46:
+                                            if num not in lotto:
+                                                lotto.append(num)
+                                                break
+                                    for i in range (6):
+                                        if jackpot[i] in lotto:
+                                            count = count + 1
+                                    if count == 6:
+                                            break
+                                print ("How many attempts did it take?:" ,lotto, "times")\
+
+                                How many attempts did it take?: 13998130 times</code></pre>
+                                <p data-ke-size="size16">Lesson learned: don't buy the lotto. I would rather work hard and earn money that is equivalent to the amount of work I have done than to do nothing while dreaming to suddenly become a billionaire by winning the lotto.</p>
                             </div>
                             <!-- END: Post Text -->
                             <!-- START: Post Share -->
-                            
                             <!-- END: Post Share -->
                         </div>
                         <!-- END: Post -->

@@ -13,7 +13,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Python | For Loop</title>
+        <title>Python | While Loop</title>
         <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
         <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
         <meta name="author" content="nK">
@@ -234,51 +234,34 @@
                         <div class="nk-gap-4"></div>
                         <!-- START: Post -->
                         <div class="nk-blog-post nk-blog-post-single">
-                            <h1 class="display-4">Loop Statement 1 (For Loop)</h1>
+                            <h1 class="display-4">Loop Statement 2 (While Loop)</h1>
                             <div class="nk-post-meta">
-                                <div class="nk-post-date">December 16, 2020</div>
+                                <div class="nk-post-date">August 14, 2018</div>
                                 <div class="nk-post-category"><a href="#">Python</a></div>
                             </div>
                             <!-- START: Post Text -->
                             <div class="nk-post-text">
-                                <p><span style="color: #0593d3;"><b>Loop Statement</b></span></p>
-                                <p>As mentioned in the previous post, there are two types of control statements: Conditional statements and Loop statements. In this post, I am going to talk about the loop statement.</p>
-                                <p><span style="color: #333333;">While you are writing the code, you will realize that there are times when some codes are almost identical. Then you think, "I hope there is a special code that allows the computer to repeat it several times without me having to write that code every single time". Loop statements quench our thirst for more succinct codes. </span>Evident from the name, the loop statements basically put the code in a loop, repeating a certain part for a certain number of times. Hence, it is important to inform the computer correctly which portion of the code and how many times you want to repeat it. There are two types of loop statements, which are for statements and while statements.</p>
-                                <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style5" />
-                                <p><span style="color: #0593d3;"><b>For Statements</b></span></p>
-                                <pre id="code_1608002645861" class="python" data-ke-language="python" data-ke-type="codeblock"><code>for i in a:<br>&nbsp;&nbsp;&nbsp;&nbsp;what you want the computer to do with the input</code></pre>
-                                <p>This is the basic representation of for statement. Similar to a conditional statement, it is indicated by a colon and an indent. For Statements bring one data value 'a' (after 'in') at a time to 'i' and perform the code. Also, they only accept collective data types (collection of multiple data values).&nbsp;</p>
-                                <p>&nbsp;</p>
-                                <p>Instead of writing</p>
-                                <pre id="code_1608001824000" class="python" data-ke-language="python" data-ke-type="codeblock"><code>print (1)<br>print (2)<br>print (3)
-                                    <br>1<br>2<br>3</code></pre>
-                                <p>, using for statement</p>
-                                <pre id="code_1608002597842" class="python" data-ke-language="python" data-ke-type="codeblock"><code>for i in [1, 2, 3]:<br>&nbsp;&nbsp;&nbsp;&nbsp;print (i)
-                                    <br>1<br>2<br>3</code></pre>
-                                <p>can print the same values more efficiently and quickly.</p>
-                                <p>Here, it might be hard to notice the effectiveness of for statements since we are dealing with only 3 numbers. But imagine having to print 1000000 numbers. As the code gets more complex and multi-stepped, the benefit of for statements become more outstanding.&nbsp;</p>
-                                <p>&nbsp;</p>
-                                <p><span style="color: #409d00;">Range</span></p>
-                                <p><span style="color: #000000;">Range function can be used when you need a wide range of consecutive numbers.</span></p>
-                                <pre id="code_1608003023203" class="python" data-ke-language="python" data-ke-type="codeblock"><code>for i in range(1, 10):<br>&nbsp;&nbsp;&nbsp;&nbsp;print (i)
-                                    <br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</code></pre>
-                                <p>We need to keep in mind that the range function does not include the second number in the bracket. So the code above only printed numbers from 1 to 9 (less than 10).</p>
-                                <p>&nbsp;</p>
-                                <p>However, if you do not want to use consecutive numbers, you can still use the step function.</p>
-                                <pre id="code_1608003626582" class="python" data-ke-language="python" data-ke-type="codeblock"><code>for i in range(1, 100, 2):<br>&nbsp;&nbsp;&nbsp;&nbsp;print (1)</code></pre>
-                                <p>&nbsp;</p>
-                                <p>This code will print every other number from 1 to 99.</p>
-                                <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style5" />
-                                <p>Q. Create a code that prints out a multiplication table of the input. (If you enter 5 as the input, the code will print out 5 times multiplication table)</p>
-                                <pre id="code_1608023022909" class="python" data-ke-language="python" data-ke-type="codeblock"><code>MT = int(input("which multiplication table do you want to print?"))</code></pre>
-                                <p>First, you need to receive an input as an integer.</p>
-                                <p>Accounting for the format of multiplication tables is the key to resolving this question. The input entered - 'MT' - is multiplied from 1 to 9 each time, resulting in 'MT' times multiplication table.</p>
-                                <pre id="code_1608023287018" class="python" data-ke-language="python" data-ke-type="codeblock"><code>MT = int(input("which multiplication table do you want to print?"))
-                                    <br>for m in range(1, 10):<br>&nbsp;&nbsp;&nbsp;&nbsp;print(MT, 'X', m, '=', MT*m)</code></pre>
-                                <p>&nbsp;</p>
-                                <p>If MT is 7, the computer will print out the below:</p>
-                                <pre id="code_1608023477114" class="python" data-ke-language="python" data-ke-type="codeblock"><code>7 X 1 = 7<br>7 X 2 = 14<br>7 X 3 = 21<br>7 X 4 = 28<br>7 X 5 = 35<br>7 X 6 = 42<br>7 X 7 = 49<br>7 X 8 = 56<br>7 X 9 = 63</code></pre>
-                            </div>
+                                <p data-ke-size="size16"><span style="color: #0593d3;"><b>While loops</b></span></p>
+                                    <pre id="code_1632619893931" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>while (condition): <br>&nbsp;&nbsp;&nbsp;&nbsp;(statements that you input)</code></pre>
+                                    <p data-ke-size="size16">The basic format of while loops follows those of other conditional and loop statements: indicating with a colon and an indent. The most prominent characteristic of the while loop is that it continues to execute the statements when it satisfies the conditions. As a result, some conditions might make your computer fall into the loophole of the neverending repetition of the statement.</p>
+                                    <pre id="code_1632620039327" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(1)</code></pre>
+                                    <p data-ke-size="size16">This code will print out one forever. Therefore, it is essential to be conscious of what you are entering as your condition.</p>
+                                    <pre id="code_1632620478447" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>count = 10<br>while count &gt; 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(count)<br>&nbsp;&nbsp;&nbsp;&nbsp;count = count - 1<br><br>9<br>8<br>7<br>6<br>5<br>4<br>3<br>2<br>1<br>0</code></pre>
+                                    <p data-ke-size="size16">This condition allows the computer to exit the code after printing out from 9 to 0 consecutively because of how the condition is set. The <i>count</i> variable is set as 10 in the beginning, and the <i>count</i> is reduced by one every time you print out.</p>
+                                    <pre id="code_1632621031072" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>count = 10<br>while count &gt; 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;count = count - 1<br>&nbsp;&nbsp;&nbsp;&nbsp;if count == 5:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;&nbsp;&nbsp;print (count)<br>9<br>8<br>7<br>6</code></pre>
+                                    <p data-ke-size="size16">We could also use the break statement to terminate the loop. This code "breaks" the loop when the count variable equals 5, which means it would print out from 10 to 6 instead.</p>
+                                    <pre id="code_1632621446937" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>count = 10<br>while count &gt; 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;count = count - 1<br>&nbsp;&nbsp;&nbsp;&nbsp;if count == 2:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue<br>&nbsp;&nbsp;&nbsp;&nbsp;print (count)<br>9<br>8<br>7<br>6<br>4<br>3<br>2<br>1<br>0</code></pre>
+                                    <p data-ke-size="size16">The continue statement stops the current process and moves on to the next step. When the count reaches 5, it would not print anything but subtract one from the count, which means that the computer would print out from 9 to 0 consecutively except for 5.</p>
+                                    <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6" />
+                                    <p data-ke-size="size16">Q. Create a code that prints out a multiplication table of the input using the while loop. (the same question that we saw in the previous post but with while loop instead of for loop)</p>
+                                    <pre id="code_1632622397297" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>MT = int(input("which multiplication table do you want to print?"))</code></pre>
+                                    <p data-ke-size="size16">First, you do the same thing where you receive input from the user.</p>
+                                    <p data-ke-size="size16">You could maintain the same format of multiplying the input MT by 1 to 9 each time, but use the while loop this time.</p>
+                                    <p data-ke-size="size16">We could set up the condition using the <i>count</i> variable again so that it would exit the code after multiplying from 1 to 9.</p>
+                                    <pre id="code_1632622677488" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>MT = int(input("which multiplication table do you want to print?"))<br><br>count = 1<br>while count &lt; 10:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(MT, 'X', count, '=', MT*count)<br>&nbsp;&nbsp;&nbsp;&nbsp;count = count + 1</code></pre>
+                                    <p data-ke-size="size16">&nbsp;</p>
+                                    <p data-ke-size="size16">If MT is 4, it would print out the below:</p>
+                                    <pre id="code_1632623209527" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>4 X 1 = 4<br>4 X 2 = 8<br>4 X 3 = 12<br>4 X 4 = 16<br>4 X 5 = 20<br>4 X 6 = 24<br>4 X 7 = 28<br>4 X 8 = 32<br>4 X 9 = 36</code></pre>
                             <!-- END: Post Text -->
                             <!-- START: Post Share -->
                             
