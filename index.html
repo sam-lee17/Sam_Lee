@@ -41,27 +41,14 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
-        <script>
-            function includeHTML(divContainer, urlHTML) {
-                let xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function () {
-                if (this.readyState == 4) {
-                    if (this.status == 200) { divContainer.innerHTML = this.responseText; }
-                    if (this.status == 404) { divContainer.innerHTML = "Page not found."; }
-                    }
-                }
-                xhttp.open("GET", urlHTML, true);
-                xhttp.send();
-            }
-            includeHTML(document.querySelector('#header'), 'nav.html');
-        </script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
     </head>
     <!--
     Additional Classes:
         .nk-bg-gradient
 -->
     <body>
-        <header id='header' class="nk-header nk-header-opaque">
+        <header w3-include-html="nav.html" id='header' class="nk-header nk-header-opaque">
             
         </header>
         <!--
@@ -336,6 +323,8 @@
         <script src="assets/js/snow.min.js"></script>
         <script src="assets/js/snow-init.js"></script>
         <!-- END: Scripts -->
-
+        <script>
+            w3.includeHTML();
+        </script>
     </body>
 </html>
