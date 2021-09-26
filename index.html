@@ -51,6 +51,9 @@
         <header w3-include-html="nav.html" id='header' class="nk-header nk-header-opaque">
             
         </header>
+        <script>
+            w3.includeHTML();
+        </script>
         <!--
     START: Navbar Mobile
 
@@ -273,7 +276,16 @@
 
     Additional Classes:
         .nk-footer-transparent
--->     <div w3-include-html="footer.html"></div>
+-->      <footer class="nk-footer">
+            <div class="nk-footer-cont">
+                <div class="container text-center">
+                    <div class="nk-footer-text">
+                        <p>2020 &copy; Design by Samantha Lee</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
            
             <!-- END: Footer -->
         </div>
@@ -281,9 +293,7 @@
         <!-- GSAP -->
         
         <!-- END: Scripts -->
-        <script>
-            w3.includeHTML();
-        </script>
+        
         <script src="assets/vendor/gsap/src/minified/TweenMax.min.js"></script>
         <script src="assets/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
         <!-- Popper -->
