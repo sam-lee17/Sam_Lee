@@ -41,100 +41,19 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
     </head>
     <!--
     Additional Classes:
         .nk-bg-gradient
 -->
     <body>
-        <header class="nk-header nk-header-opaque">
-            <!--
-        START: Navbar
-
-        Additional Classes:
-            .nk-navbar-lg
-            .nk-navbar-sticky
-            .nk-navbar-autohide
-            .nk-navbar-transparent
-            .nk-navbar-transparent-always
-            .nk-navbar-white-text-on-top
-    -->
-            <nav class="nk-navbar nk-navbar-top" style="padding:10px !important">
-                <div class="container">
-                    <div class="nk-nav-table">
-                        <a href="index.html" class="nk-nav-logo">
-                            <img src="assets/images/Logo_final.png" alt="" width="85" style="padding:0px;margin:0px">
-                        </a>
-                        <ul class="nk-nav nk-nav-right d-none d-lg-block" data-nav-mobile="#nk-nav-mobile">
-                            <li class="active nk-drop-item">
-                                <a href="index.html"> Home </a>
-                                <ul class="dropdown">
-                                </ul>
-                            </li>
-                            <li class=" nk-drop-item">
-                                <a href="#"> Yoga </a>
-                                <ul class="dropdown">
-                                    <li class=" nk-drop-item">
-                                        <!-- work-single-1.html -->
-                                        <a href="#"> About Hatha Yoga </a>
-                                    </li>
-                                    <li class=" nk-drop-item">
-                                        <a href="Asanas/asanas.html"> Asanas </a>
-                                    </li>
-                                    <li class=" nk-drop-item">
-                                        <!-- work-2-style-5.html -->
-                                        <a href="#"> Kids Yoga </a>
-                                    </li>
-                                </ul>
-
-                            <li class=" nk-drop-item">
-                                <!-- blog-masonry-3.html -->
-                                <a href="#"> Coding </a>
-                                <ul class="dropdown">
-                                    <li class="nk-drop-item">
-                                        <a href="Python/python.html"> Programming Language </a>
-                                        <ul class="dropdown">
-                                            <li>
-                                                <a href="Python/python.html"> Python </a>
-                                            </li>    
-                                        </ul>
-                                    </li>
-                                    <li class=" nk-drop-item">
-                                        <a href="deeplearning.html"> Data Science </a>
-                                        <ul class="dropdown">
-                                            <li>
-                                                <a href="deeplearning.html"> Deep Learning </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nk-drop-item">
-                                        <!-- blog-classic.html -->
-                                        <a href="#"> Independent Projects </a>
-                                        <ul class="dropdown">
-                                            <li>
-                                                <!-- blog-classic.html -->
-                                                <a href="#"> Independent Projects </a>
-                                            </li>
-                                        </ul> 
-                                    </li>
-                                </ul>
-                            </li>
-                        <ul class="nk-nav nk-nav-right nk-nav-icons">
-                            <li class="single-icon d-lg-none">
-                                <a href="#" class="nk-navbar-full-toggle">
-                                    <span class="nk-icon-burger">
-                                        <span class="nk-t-1"></span>
-                                        <span class="nk-t-2"></span>
-                                        <span class="nk-t-3"></span>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- END: Navbar -->
+        <header w3-include-html="nav.html" id='header' class="nk-header nk-header-opaque">
+            
         </header>
+        <script>
+            w3.includeHTML();
+        </script>
         <!--
     START: Navbar Mobile
 
@@ -313,20 +232,24 @@
 
     Additional Classes:
         .nk-footer-transparent
--->
-            <footer class="nk-footer">
-                <div class="nk-footer-cont">
-                    <div class="container text-center">
-                        <div class="nk-footer-text">
-                            <p>2020 &copy; Design by Samantha Lee</p>
-                        </div>
+-->      <footer class="nk-footer">
+            <div class="nk-footer-cont">
+                <div class="container text-center">
+                    <div class="nk-footer-text">
+                        <p>2020 &copy; Design by Samantha Lee</p>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
+
+           
             <!-- END: Footer -->
         </div>
         <!-- START: Scripts -->
         <!-- GSAP -->
+        
+        <!-- END: Scripts -->
+        
         <script src="assets/vendor/gsap/src/minified/TweenMax.min.js"></script>
         <script src="assets/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
         <!-- Popper -->
@@ -362,6 +285,5 @@
         <!-- Snow -->
         <script src="assets/js/snow.min.js"></script>
         <script src="assets/js/snow-init.js"></script>
-        <!-- END: Scripts -->
     </body>
 </html>
