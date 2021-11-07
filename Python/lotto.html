@@ -245,15 +245,9 @@
                                 <p data-ke-size="size16">How can we generate random numbers? We can use a predefined function called <i>random</i>.</p>
                                 <pre id="code_1632651471496" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random</code></pre>
                                 <p data-ke-size="size16">To use this function, you need to import it at the beginning of the code to indicate that you are bringing information on random functions to the local computer. There are multiple functions encompassed in the random function, but here we are only going to use random.random (), which returns a random decimal number between 0 and 1. Therefore, we are going to multiply by 100 to get a number between 0 and 100.</p>
-                                <pre id="code_1632651684619" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
-                                lotto = []</code></pre>
+                                <pre id="code_1632651684619" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>lotto = []</code></pre>
                                 <p data-ke-size="size16">The <i>lotto</i> list would harbor the 6 lotto numbers.</p>
-                                <pre id="code_1632651793300" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
-                                lotto = []
-
-                                for i in range(6):
-                                    while True:
-                                        num = int(random.random ()*100)</code></pre>
+                                <pre id="code_1632651793300" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>lotto = []<br><br>for i in range(6):<br>&nbsp;&nbsp;&nbsp;&nbsp;while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = int(random.random ()*100)</code></pre>
                                 <p data-ke-size="size16">Now that we know how to return a random number, we need to repeat the random number returning code 6 times to get 6 different numbers.</p>
                                 <pre id="code_1632651953373" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
                                 lotto = []
@@ -267,41 +261,14 @@
                                                 lotto.sort()
                                                 break</code></pre>
                                 <p data-ke-size="size16">This code will append the random number generated only if it is between 0 and 46 (the range of lotto numbers stated in the question) and not in the lotto list (since we need to avoid repetition). Then, the computer presents the lotto list in consecutive increase form.</p>
-                                <pre id="code_1632652234671" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
-                                lotto = []
-
-                                for i in range(6):
-                                    while True:
-                                        num = int(random.random ()*100)
-                                        if num &gt; 0 and num &lt; 46:
-                                            if num not in lotto:
-                                                lotto.append(num)
-                                                lotto.sort()
-                                                break
-                                print(lotto)
-
-                                [4, 5, 12, 14, 32, 42]</code></pre>
+                                <pre id="code_1632652234671" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>lotto = []<br><br>for i in range(6):<br>&nbsp;&nbsp;&nbsp;&nbsp;while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = int(random.random ()*100)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num &gt; 0 and num &lt; 46:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num not in lotto:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotto.append(num)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotto.sort()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>print(lotto)<br><br>[4, 5, 12, 14, 32, 42]</code></pre>
                                 <p data-ke-size="size16">Once we run the code, it would print out 6 random numbers in a list as shown above.</p>
                                 <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6" />
                                 <p data-ke-size="size16"><span style="color: #409d00;">Q. Find out how many times you need to try to win the lotto. Let's say that the winning lotto numbers are 4, 5, 12, 14, 32, 42 from the previous question.</span></p>
                                 <p data-ke-size="size16">Here, it is similar to the lotto generator, but you need to consider one more element: the winning lotto numbers. As you continue to produce random lotto lists, you need to constantly compare them with the winning lotto list. Also, you need two counting variables: one to count how many tries you had and another to count how many of the randomly generated numbers are equal to the winning lotto numbers.</p>
-                                <pre id="code_1632652787333" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
-                                jackpot = [4, 5, 12, 14, 32, 42]
-                                num = 0</code></pre>
+                                <pre id="code_1632652787333" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>jackpot = [4, 5, 12, 14, 32, 42]<br>num = 0</code></pre>
                                 <p data-ke-size="size16">Similarly, we start by importing the <i>random</i> function. The <i>jackpot</i> is the winning lotto list that you are trying to get and the <i>num</i> is a counting variable indicating the number of attempts.</p>
-                                <pre id="code_1632652958235" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
-                                jackpot = [4, 5, 12, 14, 32, 42]
-                                num = 0
-                                while True:
-                                    num = num + 1
-                                    lotto = []
-                                    count = 0
-                                    for i in range (6):
-                                        num = int(random.random ()*100)
-                                        if num &gt; 0 and num &lt; 46:
-                                            if num not in lotto:
-                                                lotto.append(num)
-                                                break</code></pre>
+                                <pre id="code_1632652958235" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>jackpot = [4, 5, 12, 14, 32, 42]<br>num = 0<br>while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;num = num + 1<br>&nbsp;&nbsp;&nbsp;&nbsp;lotto = []<br>&nbsp;&nbsp;&nbsp;&nbsp;count = 0<br>&nbsp;&nbsp;&nbsp;&nbsp;for i in range (6):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while True: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = int(random.random ()*100)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num &gt; 0 and num &lt; 46:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num not in lotto:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotto.append(num)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</code></pre>
                                 <p data-ke-size="size16">The <i>count</i> variable counts how many of the randomly generated numbers are equal to the winning lotto numbers. Until here, there is not much difference from the previous question except for some additional variables.&nbsp;</p>
                                 <pre id="code_1632653213603" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
                                 jackpot = [4, 5, 12, 14, 32, 42]
@@ -347,15 +314,6 @@
                             </div>
                             <!-- END: Post Text -->
                             <!-- START: Post Share -->
-                            <div class="nk-post-share">
-                                <strong>Share:</strong>
-                                <a href="#" title="Share page on Facebook" data-share="facebook">Facebook</a>, <a href="#" title="Share page on Twitter" data-share="twitter">Twitter</a>, <a href="#" title="Share page on Pinterest" data-share="pinterest">Pinterest</a>
-                                <!--
-                        <a href="#" title="Share page on Google Plus" data-share="google-plus">Google Plus</a>,
-                        <a href="#" title="Share page on LinkedIn" data-share="linkedin">LinkedIn</a>,
-                        <a href="#" title="Share page on Vkontakte" data-share="vk">Vkontakte</a>
-                        -->
-                            </div>
                             <!-- END: Post Share -->
                         </div>
                         <!-- END: Post -->

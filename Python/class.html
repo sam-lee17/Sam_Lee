@@ -13,11 +13,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Python | Lotto</title>
+        <title>Python | Classes</title>
         <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
         <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
         <meta name="author" content="nK">
-        <link rel="icon" type="image/png" href="../assets/images/Logo_final.png">
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- START: Styles -->
         <!-- Google Fonts -->
@@ -234,83 +234,43 @@
                         <div class="nk-gap-4"></div>
                         <!-- START: Post -->
                         <div class="nk-blog-post nk-blog-post-single">
-                            <h1 class="display-4">Lotto generator</h1>
+                            <h1 class="display-4">Classes</h1>
                             <div class="nk-post-meta">
                                 <div class="nk-post-date">August 14, 2018</div>
                                 <div class="nk-post-category"><a href="#">Python</a></div>
                             </div>
                             <!-- START: Post Text -->
                             <div class="nk-post-text">
-                                <p data-ke-size="size16"><span style="color: #409d00;">Q. Make a lotto generator that generates random 6 numbers in the range between 0 and 46 without repetition. (Hint: use for and while loops)</span></p>
-                                <p data-ke-size="size16">How can we generate random numbers? We can use a predefined function called <i>random</i>.</p>
-                                <pre id="code_1632651471496" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random</code></pre>
-                                <p data-ke-size="size16">To use this function, you need to import it at the beginning of the code to indicate that you are bringing information on random functions to the local computer. There are multiple functions encompassed in the random function, but here we are only going to use random.random (), which returns a random decimal number between 0 and 1. Therefore, we are going to multiply by 100 to get a number between 0 and 100.</p>
-                                <pre id="code_1632651684619" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>lotto = []</code></pre>
-                                <p data-ke-size="size16">The <i>lotto</i> list would harbor the 6 lotto numbers.</p>
-                                <pre id="code_1632651793300" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>lotto = []<br><br>for i in range(6):<br>&nbsp;&nbsp;&nbsp;&nbsp;while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = int(random.random ()*100)</code></pre>
-                                <p data-ke-size="size16">Now that we know how to return a random number, we need to repeat the random number returning code 6 times to get 6 different numbers.</p>
-                                <pre id="code_1632651953373" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
-                                lotto = []
-
-                                for i in range(6):
-                                    while True:
-                                        num = int(random.random ()*100)
-                                        if num &gt; 0 and num &lt; 46:
-                                            if num not in lotto:
-                                                lotto.append(num)
-                                                lotto.sort()
-                                                break</code></pre>
-                                <p data-ke-size="size16">This code will append the random number generated only if it is between 0 and 46 (the range of lotto numbers stated in the question) and not in the lotto list (since we need to avoid repetition). Then, the computer presents the lotto list in consecutive increase form.</p>
-                                <pre id="code_1632652234671" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>lotto = []<br><br>for i in range(6):<br>&nbsp;&nbsp;&nbsp;&nbsp;while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = int(random.random ()*100)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num &gt; 0 and num &lt; 46:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num not in lotto:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotto.append(num)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotto.sort()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>print(lotto)<br><br>[4, 5, 12, 14, 32, 42]</code></pre>
-                                <p data-ke-size="size16">Once we run the code, it would print out 6 random numbers in a list as shown above.</p>
+                                <p data-ke-size="size16">There are billions of Google users worldwide with their personal information (name, age, email address, phone number, etc.) stored in the Google database. Let's say that I changed my phone number, and I am trying to update my information on my Google account. The Google database has to search for my Google account from billions of different ones, sort out the info for my phone number, and change its value. How does Google manage to organize this massive database? Because Google has an arranged structure of personal information for all individuals, using class would be an efficient way to do so.&nbsp;</p>
+                                <p data-ke-size="size16">&nbsp;</p>
+                                <p data-ke-size="size16"><span style="color: #0593d3;"><b>Class</b></span></p>
+                                <p data-ke-size="size16">Think class as the waffle pan and instances (objects produced by a particular class) as waffles. You have the same structure that you use to make different waffles.&nbsp;</p>
+                                <pre id="code_1633863419924" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>class Myclass ():<br>&nbsp;&nbsp;&nbsp;&nbsp;x = 1</code></pre>
+                                <p data-ke-size="size16">Here, you create a class called <i>Myclass</i>.</p>
+                                <pre id="code_1633863524570" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>c = Myclass()<br>print(c.x)</code></pre>
+                                <p data-ke-size="size16">&nbsp;Then, you create an object that calls <i>Myclass </i>and print the value of x from the class.</p>
+                                <p data-ke-size="size16">&nbsp;</p>
+                                <p data-ke-size="size16">To do complicated tasks, you can add various functions (waffle dough) to the class (waffle pan).</p>
+                                <pre id="code_1633864117810" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>class Numbers ():<br>&nbsp;&nbsp;&nbsp;&nbsp;a = 1<br>&nbsp;&nbsp;&nbsp;&nbsp;def func (self):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(self.a)<br>&nbsp;&nbsp;&nbsp;&nbsp;def func_2 (self):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(2*self.a)</code></pre>
+                                <p data-ke-size="size16">Under the <i>Numbers</i> class, you have set <i>a</i> as one and added two functions: one that prints out the original <i>a</i> value and the other that prints out the value of <i>a</i> multiplied by 2.</p>
+                                <pre id="code_1633864346183" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>N = Numbers ()<br>N.func ()<br>N.func_2()<br><br>1<br>2</code></pre>
+                                <p data-ke-size="size16">When you run the two functions you have created for the <i>Numbers</i> class, it prints out 1 and 2 successfully.</p>
+                                <p data-ke-size="size16">You might be wondering why we use <i>self</i> in the functions. Because we are creating a new class and setting up our own "blueprint" for the computer, we need to refer to the current instance when we are producing one. You can set <i>self</i> as any other argument you want if you would like.</p>
+                                <p data-ke-size="size16">&nbsp;</p>
+                                <p data-ke-size="size16"><br />Let's look at another example.</p>
+                                <pre id="code_1633865705323" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>class Student ():<br>&nbsp;&nbsp;&nbsp;&nbsp;def __init__ (self, name, grade):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = name<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.grade = grade<br>&nbsp;&nbsp;&nbsp;&nbsp;def func (a):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("My name is ", a.name)<br>&nbsp;&nbsp;&nbsp;&nbsp;def func_2 (b):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("I am in grade ", b.grade)<br><br>S = Student ("Sam", 12)<br>S.func ()<br>S.func_2()</code></pre>
+                                <p data-ke-size="size16"><i> __init__</i> function (self, <i>parameter</i>) is a code that automatically runs as soon as the instance is created. In other words, when you call <i>S.func()</i> and <i>S.func_2()</i>, the computer will execute the <i>__init__</i> function without us having to indicate that. This is why we were able to get the output, although we did not specify where the name and grade arguments are coming from.&nbsp;</p>
+                                <p data-ke-size="size16">Parameters are included in __init__ function, which requires you to input an accurate corresponding number of parameters you initially set when you call the function. Here, two parameters are used. This means that you must put exactly two in order to run the function successfully.</p>
                                 <hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style6" />
-                                <p data-ke-size="size16"><span style="color: #409d00;">Q. Find out how many times you need to try to win the lotto. Let's say that the winning lotto numbers are 4, 5, 12, 14, 32, 42 from the previous question.</span></p>
-                                <p data-ke-size="size16">Here, it is similar to the lotto generator, but you need to consider one more element: the winning lotto numbers. As you continue to produce random lotto lists, you need to constantly compare them with the winning lotto list. Also, you need two counting variables: one to count how many tries you had and another to count how many of the randomly generated numbers are equal to the winning lotto numbers.</p>
-                                <pre id="code_1632652787333" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>jackpot = [4, 5, 12, 14, 32, 42]<br>num = 0</code></pre>
-                                <p data-ke-size="size16">Similarly, we start by importing the <i>random</i> function. The <i>jackpot</i> is the winning lotto list that you are trying to get and the <i>num</i> is a counting variable indicating the number of attempts.</p>
-                                <pre id="code_1632652958235" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>jackpot = [4, 5, 12, 14, 32, 42]<br>num = 0<br>while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;num = num + 1<br>&nbsp;&nbsp;&nbsp;&nbsp;lotto = []<br>&nbsp;&nbsp;&nbsp;&nbsp;count = 0<br>&nbsp;&nbsp;&nbsp;&nbsp;for i in range (6):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while True: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = int(random.random ()*100)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num &gt; 0 and num &lt; 46:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num not in lotto:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotto.append(num)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</code></pre>
-                                <p data-ke-size="size16">The <i>count</i> variable counts how many of the randomly generated numbers are equal to the winning lotto numbers. Until here, there is not much difference from the previous question except for some additional variables.&nbsp;</p>
-                                <pre id="code_1632653213603" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
-                                jackpot = [4, 5, 12, 14, 32, 42]
-                                num = 0
-                                while True:
-                                    num = num + 1
-                                    lotto = []
-                                    count = 0
-                                    for i in range (6):
-                                        num = int(random.random ()*100)
-                                        if num &gt; 0 and num &lt; 46:
-                                            if num not in lotto:
-                                                lotto.append(num)
-                                                break
-                                    for i in range (6):
-                                        if jackpot[i] in lotto:
-                                            count = count + 1
-                                    if count == 6:
-                                            break</code></pre>
-                                <p data-ke-size="size16">This is the key part of the entire code. You keep comparing each number from the random lotto list and each from the winning lotto list. Then, when all 6 numbers are identical, we exit the loop since we have finally won the lotto.</p>
-                                <pre id="code_1632653387193" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random
-                                jackpot = [4, 5, 12, 14, 32, 42]
-                                num = 0
-                                while True:
-                                    num = num + 1
-                                    lotto = []
-                                    count = 0
-                                    for i in range (6):
-                                        num = int(random.random ()*100)
-                                        if num &gt; 0 and num &lt; 46:
-                                            if num not in lotto:
-                                                lotto.append(num)
-                                                break
-                                    for i in range (6):
-                                        if jackpot[i] in lotto:
-                                            count = count + 1
-                                    if count == 6:
-                                            break
-                                print ("How many attempts did it take?:" ,lotto, "times")\
-
-                                How many attempts did it take?: 13998130 times</code></pre>
-                                <p data-ke-size="size16">Lesson learned: don't buy the lotto. I would rather work hard and earn money that is equivalent to the amount of work I have done than to do nothing while dreaming to suddenly become a billionaire by winning the lotto.</p>
+                                <p data-ke-size="size16">Q. Create a code that performs the foundational arithmetic operations in an atypical way using class. If the user asks the computer to add (+), it will subtract (-). If the user asks the computer to subtract, it will add. Same with multiplication and division: Multiplication sign (*) will operate division (/), and division sign will operate multiplication. The input will only be integers.</p>
+                                <p data-ke-size="size16">&nbsp;</p>
+                                <p data-ke-size="size16">In this question, you have to use overloading operators that forcefully change a certain argument's attribute. For instance, the + sign can only be used to connect more than one string values in python. However, usage of underscores would enable the change of meaning in + sign into, in this case, subtraction.&nbsp;</p>
+                                <pre id="code_1633866927808" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>class strange():<br>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self,num):    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.a = num<br>&nbsp;&nbsp;&nbsp;&nbsp;def __add__(self, num):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.a - num<br>&nbsp;&nbsp;&nbsp;&nbsp;def __sub__(self,num):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.a + num<br>&nbsp;&nbsp;&nbsp;&nbsp;def __mul__(self,num):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.a / num<br>&nbsp;&nbsp;&nbsp;&nbsp;def __truediv__(self,num):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.a * num</code></pre>
+                                <p data-ke-size="size16">We create a class that works out the atypical arithmetic operation mentioned above with <i>num</i> as the parameter.</p>
+                                <pre id="code_1633867044787" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>N = strange(5)</code></pre>
+                                <p data-ke-size="size16">Here, the <i>num</i> is set as 5.&nbsp;</p>
+                                <pre id="code_1633867176021" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>print(N + 2)<br>print(N - 2)<br>print(N * 2)<br>print(N / 2)<br><br>3<br>7<br>2.5<br>10</code></pre>
+                                <p data-ke-size="size16">&nbsp;</p>
                             </div>
                             <!-- END: Post Text -->
                             <!-- START: Post Share -->

@@ -13,7 +13,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SL | Python</title>
+        <title>Python | Function</title>
         <meta name="description" content="Snow - Clean & Minimal Portfolio HTML template.">
         <meta name="keywords" content="portfolio, clean, minimal, blog, template, portfolio website">
         <meta name="author" content="nK">
@@ -41,6 +41,19 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-light.min.css" integrity="sha512-11xYl5MU0/AMaYnuBOXDDQdZnl5WGtLVidxqa0XUAXYf6cGnJShNpgtbmB/0MW6ypeev+9Bwj7I/J8wexX8ePw==" crossorigin="anonymous" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" integrity="sha512-jufbyMC+y5pH6dbL/adxAoUWkeGLwx6meC+9yoqY9CFLd4zpC9s5hU9c+stY2uHoYy2lIUih+HbYJIqTZxhCQQ==" crossorigin="anonymous"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <style> 
+        p{margin-bottom: 0.5rem}
+        pre{
+            padding:0px;
+            background-color:white;
+        }
+        </style>
     </head>
     <!--
     Additional Classes:
@@ -59,11 +72,11 @@
             .nk-navbar-transparent-always
             .nk-navbar-white-text-on-top
     -->
-             <nav class="nk-navbar nk-navbar-top" style="padding:10px !important">
+            <nav class="nk-navbar nk-navbar-top">
                 <div class="container">
                     <div class="nk-nav-table">
                         <a href="index.html" class="nk-nav-logo">
-                            <img src="../assets/images/Logo_final.png" alt="" width="85" style="padding:0px;margin:0px">
+                            <img src="../assets/images/Logo_final.png" alt="" width="85">
                         </a>
                         <ul class="nk-nav nk-nav-right d-none d-lg-block" data-nav-mobile="#nk-nav-mobile">
                             <li class="active nk-drop-item">
@@ -79,7 +92,7 @@
                                         <a href="#"> About Hatha Yoga </a>
                                     </li>
                                     <li class=" nk-drop-item">
-                                        <a href="Asanas/asanas.html"> Asanas </a>
+                                        <a href="../Asanas/asanas.html"> Asanas </a>
                                     </li>
                                     <li class=" nk-drop-item">
                                         <!-- work-2-style-5.html -->
@@ -146,7 +159,7 @@
 -->
         <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
             <div class="nk-navbar-bg">
-                <div class="bg-image" style="background-image: url('assets/images/bg-menu.jpg')"></div>
+                <div class="bg-image" style="background-image: url('../assets/images/bg-menu.jpg')"></div>
             </div>
             <div class="nk-nav-table">
                 <div class="nk-nav-row">
@@ -192,181 +205,100 @@
         </nav>
         <!-- END: Navbar Mobile -->
         <div class="nk-main">
-            <div class="container">
-                <!-- START: Filter -->
-                <div class="nk-pagination nk-pagination-nobg nk-pagination-center">
-                    <a href="#nk-toggle-filter"><span class="nk-icon-squares"></span></a>
+            <!-- START: Header Title -->
+            <!--
+    Additional Classes:
+        .nk-header-title-sm
+        .nk-header-title-md
+        .nk-header-title-lg
+        .nk-header-title-xl
+        .nk-header-title-full
+        .nk-header-title-parallax
+        .nk-header-title-parallax-opacity
+-->
+            <div class="nk-header-title nk-header-title-lg nk-header-title-parallax nk-header-title-parallax-opacity">
+                <div class="bg-image">
+                    <div style="background-image: url('../assets/images/post-6.jpg');"></div>
                 </div>
-                <ul class="nk-isotope-filter">
-                    <li class="active" data-filter="*">All</li>
-                    <li data-filter="Nature">Nature</li>
-                    <li data-filter="Cities">Cities</li>
-                    <li data-filter="Branding">Branding</li>
-                    <li data-filter="Design">Design</li>
-                </ul>
-                <!-- END: Filter -->
-                <!-- START: Posts List -->
-                <div class="nk-blog-isotope nk-isotope nk-isotope-gap nk-isotope-2-cols">
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Nature">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="Basic_grammar.html">
-                                    <img src="../assets/images/post-1-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Python Basic Grammar</a></h2>
-                            <div class="nk-post-date"> September 10, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>Data Type, Print function, Substitution, Annotation.</p>
-                            </div>
+                <div class="nk-header-table">
+                    <div class="nk-header-table-cell">
+                        <div class="container">
                         </div>
                     </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Cities">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="Input_Print.html">
-                                    <img src="../assets/images/post-2-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Input / Print Function </a></h2>
-                            <div class="nk-post-date"> September 13, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>Input function, Print function, Example Questions (Income calculator, Celcius convertor).</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Nature">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="data_types1.html">
-                                    <img src="../assets/images/post-3-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="data_types1.html">Data Types 1</a></h2>
-                            <div class="nk-post-date"> September 26, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>Numeric data type, String data type, Bool data type</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Branding">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="data_types2.html">
-                                    <img src="../assets/images/post-4-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Data Types 2</a></h2>
-                            <div class="nk-post-date"> October 18, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>List data type, Tuple data type, Dictionary data type, Set data type</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Design">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="conditional.html">
-                                    <img src="../assets/images/post-5-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="conditional.html">Conditional Statements</a></h2>
-                            <div class="nk-post-date"> December 13, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>Control Statement, If Statement, Elif Statement, Else Statement, Application Problem</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Design">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="loop.html">
-                                    <img src="../assets/images/post-6-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="loop.html">For Loop</a></h2>
-                            <div class="nk-post-date"> December 16, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>Loop Statement, Range, Multiplication Table Problem</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Cities">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-9-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">While Loop</a></h2>
-                            <div class="nk-post-date"> December 27, 2020 </div>
-                            <div class="nk-post-text">
-                                <p>Loop Statement, Multiplication Table Problem</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Nature">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-7-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Lotto Codes</a></h2>
-                            <div class="nk-post-date"> Jule 3, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>Lotto Generator Code, Possibility of Winning the Lotto Code</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
-                    <!-- START: Post -->
-                    <div class="nk-isotope-item" data-filter="Branding">
-                        <div class="nk-blog-post">
-                            <div class="nk-post-thumb">
-                                <a href="blog-single.html">
-                                    <img src="../assets/images/post-8-mid.jpg" alt="" class="nk-img-stretch">
-                                </a>
-                                <div class="nk-post-category"><a href="#">Python</a></div>
-                            </div>
-                            <h2 class="nk-post-title h4"><a href="blog-single.html">Function</a></h2>
-                            <div class="nk-post-date"> June 26, 2018 </div>
-                            <div class="nk-post-text">
-                                <p>Function, Local and Global Scope, Return Statement, Parameter / Argument</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END: Post -->
                 </div>
-                <!-- END: Posts List -->
-                <div class="nk-gap-4"></div>
             </div>
+            <!-- END: Header Title -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="nk-gap-4"></div>
+                        <!-- START: Post -->
+                        <div class="nk-blog-post nk-blog-post-single">
+                            <h1 class="display-4">Function</h1>
+                            <div class="nk-post-meta">
+                                <div class="nk-post-date">June 9, 2020</div>
+                                <div class="nk-post-category"><a href="#">Python</a></div>
+                            </div>
+                            <!-- START: Post Text -->
+                            <div class="nk-post-text">
+                                <p data-ke-size="size16"><span style="color: #0593d3;"><b>Function</b></span></p>
+                                <pre id="code_1632655590519" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>def (parameter):<br>&nbsp;&nbsp;&nbsp;&nbsp;(statement)</code></pre>
+                                <p data-ke-size="size16">Above is the basic format of functions.&nbsp;</p>
+                                <p data-ke-size="size16">We use functions to eliminate repetition in the code by defining the repeating code in a function. For example, if we set the lotto generator in a lotto function,&nbsp;</p>
+                                <pre id="code_1632666049091" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>import random<br>def lotto():<br>&nbsp;&nbsp;&nbsp;&nbsp;lotto_list = []<br>&nbsp;&nbsp;&nbsp;&nbsp;for i in range (6):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = int(random.random()*100)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num &gt; 0 and num &lt; 46:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num not in lotto_list:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotto_list.append<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>print(lotto_list)</code></pre>
+                                <p data-ke-size="size16">this entire code will be run once you run the <i>lotto ()</i> function.</p>
+                                <p data-ke-size="size16">However, the code is not executed unless you call the function again. In other words,</p>
+                                <pre id="code_1632666230937" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>def func():<br>&nbsp;&nbsp;&nbsp;&nbsp;a = 1<br>&nbsp;&nbsp;&nbsp;&nbsp;print(a)</code></pre>
+                                <p data-ke-size="size16">you create a function&nbsp;</p>
+                                <pre id="code_1632666272860" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>func ()<br><br>1</code></pre>
+                                <p data-ke-size="size16">that prints out 1.</p>
+                                <p data-ke-size="size16">But,&nbsp;</p>
+                                <pre id="code_1632666302991" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>print (a)<br><br>Error: a is not defined</code></pre>
+                                <p data-ke-size="size16">when you try to print (a), you get an error, although you have set a = 1 in the function called <i>func ()</i>.</p>
+                                <p data-ke-size="size16">This is because a = 1 is inside the function, a local scope, and the computer does not "remember" the variable anymore as the function ends.</p>
+                                <p data-ke-size="size16">If a is defined as 1 outside of the function, it would be considered as a global scope. This means that the computer "remembers" the variable until the python ends. As a result, the computer would print out 1 without having to call the function.</p>
+                                <p data-ke-size="size16">If you would like the value of the variable <i>a</i> to be identical inside and outside of the function,</p>
+                                <pre id="code_1632667158117" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>def func ():<br>&nbsp;&nbsp;&nbsp;&nbsp;global a<br>&nbsp;&nbsp;&nbsp;&nbsp;a = 1<br>&nbsp;&nbsp;&nbsp;&nbsp;print(a)</code></pre>
+                                <p data-ke-size="size16">you can claim that the variable <i>a</i> inside the function is global.</p>
+                                <p data-ke-size="size16">Then,</p>
+                                <pre id="code_1632667219539" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>func ()<br>print(a)<br><br>2<br>2</code></pre>
+                                <p data-ke-size="size16">the computer would print out 2 for both scenarios.</p>
+                                <p data-ke-size="size16">&nbsp;</p>
+                                <p data-ke-size="size16"><span style="color: #409d00;">Return</span></p>
+                                <p data-ke-size="size16">A return statement may seem identical to the print function since they do the same work in terms of returning a value. However, there is a major difference.&nbsp;</p>
+                                <p data-ke-size="size16">The print function is a function, which means that it would only return a value when you "tell" the computer to do so.</p>
+                                <p data-ke-size="size16">On the other hand, the return statement defines the value that you get from the function as the function itself.</p>
+                                <pre id="code_1633262766026" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>def lotto ():<br>&nbsp;&nbsp;&nbsp;&nbsp;create_lotto = [] # the six random numbers put in a list<br>&nbsp;&nbsp;&nbsp;&nbsp;# rest of the lotto code<br>&nbsp;&nbsp;&nbsp;&nbsp;return create_lotto</code></pre>
+                                <p data-ke-size="size16">Here, the computer would return the value of <i>create_lotto</i> as <i>lotto ()</i>. In other words, the data type of <i>lotto ()</i> becomes a list, and now you are able to utilize different functions specific to the list.</p>
+                                <p data-ke-size="size16">&nbsp;</p>
+                                <p data-ke-size="size16"><span style="color: #409d00;">Parameter / Argument</span></p>
+                                <p data-ke-size="size16">Parameter / Argument is a variable that is passed into a function and prints out the value of the code depending on the altering value of the parameter. It seems similar to the input function, but a parameter is part of the function. You need to identify the parameter if you included one every time to call the function. In addition, you need to be aware of how many parameters you are including because the code works only if the correct number of parameters are stated when calling the function.</p>
+                                <pre id="code_1633263379819" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>def mul_table (num):<br>&nbsp;&nbsp;&nbsp;&nbsp;count = 0<br>&nbsp;&nbsp;&nbsp;&nbsp;while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(num*count)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if count == 9:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</code></pre>
+                                <p data-ke-size="size16">This is an example of a code that prints out a multiplication table of the parameter. In this case, the parameter is set as <i>num</i>.</p>
+                                <p data-ke-size="size16">If you call the function with the parameter being 9,</p>
+                                <pre id="code_1633263595000" class="html xml" data-ke-language="html" data-ke-type="codeblock"><code>mul_table (9)</code></pre>
+                                <p data-ke-size="size16">the computer would print out the multiplication of 9.</p>
+                                <p data-ke-size="size16">&nbsp;</p>
+                            </div>
+                            <!-- END: Post Text -->
+                            <!-- START: Post Share -->
+                        
+                            <!-- END: Post Share -->
+                        </div>
+                        <!-- END: Post -->
+                        <div class="nk-gap-3"></div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- END: Reply -->
             <!-- START: Pagination -->
             <div class="nk-pagination nk-pagination-center">
-                <a href="#">Load More Posts</a>
+                <div class="container">
+                    <a class="nk-pagination-prev" href="#"><span class="pe-7s-angle-left"></span> Previous Post</a>
+                    <a class="nk-pagination-center" href="blog-masonry-2.html"><span class="nk-icon-squares"></span></a>
+                    <a class="nk-pagination-next" href="#">Next Post <span class="pe-7s-angle-right"></span> </a>
+                </div>
             </div>
             <!-- END: Pagination -->
             <!--
@@ -378,6 +310,7 @@
             <footer class="nk-footer">
                 <div class="nk-footer-cont">
                     <div class="container text-center">
+                        
                         <div class="nk-footer-text">
                             <p>2020 &copy; Design by Samantha Lee</p>
                         </div>
